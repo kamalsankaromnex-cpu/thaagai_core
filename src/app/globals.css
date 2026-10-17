@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #FAF7F2;
+  --ink: #262321;
+  --wine: #6D1833;
+  --gold: #B89A62;
+  --sand: #EDE5DA;
+  --line: #d9cfc1;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1917;
+    --ink: #f3ece3;
+    --wine: #e3a3b8;
+    --gold: #c5a870;
+    --sand: #2a2522;
+    --line: #40383a;
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-noto-sans), system-ui, -apple-system, sans-serif;
+  min-width: 360px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-brand {
+  font-family: var(--font-cormorant), Georgia, serif;
+  color: var(--wine);
+}
+
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Accessible touch target helper */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}

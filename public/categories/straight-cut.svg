@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="c1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5E1028"/>
+      <stop offset="100%" stop-color="#741832"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#c1Grad)"/>
+  <rect width="560" height="410" x="20" y="20" fill="none" stroke="#B78A45" stroke-width="1.5" stroke-opacity="0.4" rx="16"/>
+  <!-- Straight Cut Kurta Silhouette Outline -->
+  <g transform="translate(225, 60)" stroke="#B78A45" fill="none" stroke-width="2.5" opacity="0.85">
+    <!-- Neckline -->
+    <path d="M50 20 C65 40, 85 40, 100 20 L120 40 L135 110 L115 115 L110 80 L110 320 L40 320 L40 80 L35 115 L15 110 L30 40 Z"/>
+    <!-- Center Slit & Buttons -->
+    <line x1="75" y1="40" x2="75" y2="140" stroke-width="1.5"/>
+    <circle cx="75" cy="60" r="2.5" fill="#B78A45"/>
+    <circle cx="75" cy="85" r="2.5" fill="#B78A45"/>
+    <circle cx="75" cy="110" r="2.5" fill="#B78A45"/>
+    <!-- Gathered Churidar Bottom Ankles -->
+    <path d="M50 325 L50 370 Q75 365 75 375 Q75 385 55 388"/>
+    <path d="M100 325 L100 370 Q75 365 75 375 Q75 385 95 388"/>
+  </g>
+</svg>

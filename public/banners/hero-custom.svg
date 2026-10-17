@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" width="1600" height="700">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#211D1E"/>
+      <stop offset="50%" stop-color="#3A1724"/>
+      <stop offset="100%" stop-color="#5E1028"/>
+    </linearGradient>
+    <radialGradient id="goldGlow3" cx="80%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B78A45" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#211D1E" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="gridTile3" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#B78A45" stroke-width="0.5" stroke-opacity="0.12"/>
+      <path d="M 25 0 L 25 50 M 0 25 L 50 25" fill="none" stroke="#B78A45" stroke-width="0.3" stroke-dasharray="2,3" stroke-opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="700" fill="url(#bgGrad3)"/>
+  <rect width="1600" height="700" fill="url(#goldGlow3)"/>
+  <rect width="1600" height="700" fill="url(#gridTile3)"/>
+  <!-- Bespoke Atelier Tailoring Geometry & Tape Accents on Right -->
+  <g transform="translate(1120, 160)" stroke="#B78A45" stroke-width="2" fill="none" opacity="0.35">
+    <circle cx="180" cy="180" r="160" stroke-dasharray="8,6"/>
+    <path d="M100 100 L260 260 M100 260 L260 100"/>
+    <circle cx="180" cy="180" r="40" fill="#B78A45" fill-opacity="0.2"/>
+  </g>
+</svg>

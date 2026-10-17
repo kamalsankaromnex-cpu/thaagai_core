@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 50" width="250" height="50" fill="none">
+  <!-- Brand Name Typography -->
+  <text x="0" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="700" letter-spacing="4" fill="#741832">THAAGAI</text>
+  <!-- Tamil Wordmark -->
+  <text x="175" y="31" font-family="'Noto Serif Tamil', serif" font-size="18" font-weight="500" fill="#B78A45">தாகை</text>
+  <text x="2" y="46" font-family="'Noto Sans', sans-serif" font-size="8.5" font-weight="600" letter-spacing="3" fill="#8F6326">TAMIL CHURIDAR ATELIER</text>
+</svg>

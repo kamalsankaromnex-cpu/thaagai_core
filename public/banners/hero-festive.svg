@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" width="1600" height="700">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A2D2A"/>
+      <stop offset="50%" stop-color="#2D1526"/>
+      <stop offset="100%" stop-color="#5E1028"/>
+    </linearGradient>
+    <radialGradient id="goldGlow2" cx="85%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#1A2D2A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="festiveTile2" width="70" height="70" patternUnits="userSpaceOnUse">
+      <circle cx="35" cy="35" r="28" fill="none" stroke="#D4AF37" stroke-width="0.75" stroke-opacity="0.14"/>
+      <path d="M35 15 Q45 35 35 55 Q25 35 35 15 Z" fill="#D4AF37" fill-opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="700" fill="url(#bgGrad2)"/>
+  <rect width="1600" height="700" fill="url(#goldGlow2)"/>
+  <rect width="1600" height="700" fill="url(#festiveTile2)"/>
+  <!-- Festive Zari Motifs -->
+  <g transform="translate(1100, 150)" stroke="#D4AF37" fill="none" stroke-width="1.8" opacity="0.4">
+    <path d="M200 40 C140 100, 140 220, 200 300 C260 220, 260 100, 200 40 Z"/>
+    <path d="M120 120 C180 180, 180 260, 280 200"/>
+    <circle cx="200" cy="170" r="45" fill="#D4AF37" fill-opacity="0.15"/>
+  </g>
+</svg>

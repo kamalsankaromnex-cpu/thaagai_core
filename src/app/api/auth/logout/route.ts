@@ -1,0 +1,14 @@
+﻿import { NextResponse } from "next/server";
+import { CUSTOMER_COOKIE_NAME } from "@/server/auth/customer-auth";
+
+export async function POST() {
+  const res = NextResponse.json({ success: true, message: "Logged out successfully" });
+  res.cookies.set({
+    name: CUSTOMER_COOKIE_NAME,
+    value: "",
+    httpOnly: true,
+    expires: new Date(0),
+    path: "/",
+  });
+  return res;
+}

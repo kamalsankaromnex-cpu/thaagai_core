@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <!-- Background Weave Texture -->
+    <pattern id="weave" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#721C24" />
+      <path d="M0 0h4v4H0zm4 4h4v4H4z" fill="#65171F" opacity="0.6"/>
+      <path d="M0 4h4v4H0zm4-4h4v4H4z" fill="#7D232C" opacity="0.4"/>
+    </pattern>
+    <!-- Traditional Tamil Butta Motif -->
+    <g id="butta">
+      <!-- Gold Zari Petals -->
+      <path d="M 0,-24 C 10,-12 10,12 0,24 C -10,12 -10,-12 0,-24 Z" fill="#D4AF37" />
+      <path d="M -24,0 C -12,10 12,10 24,0 C 12,-10 -12,-10 -24,0 Z" fill="#D4AF37" />
+      <circle cx="0" cy="0" r="6" fill="#800000" stroke="#FFD700" stroke-width="1.5" />
+      <!-- Delicate corner dots -->
+      <circle cx="-14" cy="-14" r="2" fill="#FFDF73" />
+      <circle cx="14" cy="-14" r="2" fill="#FFDF73" />
+      <circle cx="-14" cy="14" r="2" fill="#FFDF73" />
+      <circle cx="14" cy="14" r="2" fill="#FFDF73" />
+    </g>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#weave)" />
+
+  <g transform="translate(128, 128)"><use href="#butta" /></g>
+  <g transform="translate(384, 128)"><use href="#butta" /></g>
+  <g transform="translate(128, 384)"><use href="#butta" /></g>
+  <g transform="translate(384, 384)"><use href="#butta" /></g>
+  <g transform="translate(256, 256)"><use href="#butta" transform="scale(1.15)" /></g>
+  <g transform="translate(0, 0)"><use href="#butta" /></g>
+  <g transform="translate(512, 0)"><use href="#butta" /></g>
+  <g transform="translate(0, 512)"><use href="#butta" /></g>
+  <g transform="translate(512, 512)"><use href="#butta" /></g>
+  <g transform="translate(256, 0)"><use href="#butta" /></g>
+  <g transform="translate(256, 512)"><use href="#butta" /></g>
+  <g transform="translate(0, 256)"><use href="#butta" /></g>
+  <g transform="translate(512, 256)"><use href="#butta" /></g>
+</svg>

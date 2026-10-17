@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="c5Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A0B1E"/>
+      <stop offset="100%" stop-color="#211D1E"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#c5Grad)"/>
+  <rect width="560" height="410" x="20" y="20" fill="none" stroke="#B78A45" stroke-width="1.5" stroke-opacity="0.4" rx="16"/>
+  <!-- Bespoke Tailoring Scissors, Tape & Kurta Pattern -->
+  <g transform="translate(230, 80)" stroke="#B78A45" fill="none" stroke-width="2.5" opacity="0.9">
+    <!-- Tailor Measuring Tape Curve -->
+    <path d="M-40 260 Q70 180 180 260" stroke-dasharray="4,4" stroke-width="2"/>
+    <!-- Scissor blades and rings -->
+    <circle cx="50" cy="80" r="22" stroke-width="3"/>
+    <circle cx="90" cy="80" r="22" stroke-width="3"/>
+    <line x1="57" y1="95" x2="105" y2="190" stroke-width="3"/>
+    <line x1="83" y1="95" x2="35" y2="190" stroke-width="3"/>
+    <circle cx="70" cy="120" r="4" fill="#B78A45"/>
+  </g>
+</svg>

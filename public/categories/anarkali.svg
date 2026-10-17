@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="c2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D1526"/>
+      <stop offset="100%" stop-color="#4A0B1E"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#c2Grad)"/>
+  <rect width="560" height="410" x="20" y="20" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" rx="16"/>
+  <!-- Anarkali Flared Silhouette Outline -->
+  <g transform="translate(190, 50)" stroke="#D4AF37" fill="none" stroke-width="2.5" opacity="0.85">
+    <!-- Bodice -->
+    <path d="M85 30 C100 45, 120 45, 135 30 L155 50 L170 120 L150 125 L145 90 L140 140 L80 140 L75 90 L70 125 L50 120 L65 50 Z"/>
+    <!-- Flared Kali Skirt -->
+    <path d="M80 140 Q30 240 10 320 Q110 340 210 320 Q190 240 140 140 Z"/>
+    <line x1="95" y1="140" x2="60" y2="325" stroke-width="1"/>
+    <line x1="110" y1="140" x2="110" y2="330" stroke-width="1"/>
+    <line x1="125" y1="140" x2="160" y2="325" stroke-width="1"/>
+    <!-- Zari Hemline -->
+    <path d="M12 312 Q110 332 208 312" stroke-width="3" stroke-dasharray="4,3"/>
+  </g>
+</svg>

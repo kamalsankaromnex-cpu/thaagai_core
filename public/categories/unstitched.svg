@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="c6Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5E1028"/>
+      <stop offset="100%" stop-color="#8F6326"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#c6Grad)"/>
+  <rect width="560" height="410" x="20" y="20" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" rx="16"/>
+  <!-- Folded 3-Piece Material Layers (Top, Bottom, Dupatta) -->
+  <g transform="translate(190, 110)" stroke="#D4AF37" fill="none" stroke-width="2.5" opacity="0.9">
+    <!-- Bottom layer -->
+    <rect x="0" y="140" width="220" height="60" rx="8" fill="#5E1028" fill-opacity="0.5"/>
+    <!-- Middle layer -->
+    <rect x="15" y="70" width="190" height="60" rx="8" fill="#741832" fill-opacity="0.5"/>
+    <!-- Top layer with zari border fold -->
+    <rect x="30" y="0" width="160" height="60" rx="8" fill="#8F6326" fill-opacity="0.5"/>
+    <line x1="30" y1="45" x2="190" y2="45" stroke-width="3" stroke-dasharray="6,3"/>
+  </g>
+</svg>

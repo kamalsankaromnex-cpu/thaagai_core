@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="c4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142621"/>
+      <stop offset="100%" stop-color="#3A1724"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#c4Grad)"/>
+  <rect width="560" height="410" x="20" y="20" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" rx="16"/>
+  <!-- Silk Kurta & Zari Borders -->
+  <g transform="translate(220, 60)" stroke="#D4AF37" fill="none" stroke-width="2.5" opacity="0.85">
+    <path d="M55 25 C70 45, 90 45, 105 25 L125 45 L140 115 L120 120 L115 85 L115 315 L45 315 L45 85 L40 120 L20 115 L35 45 Z"/>
+    <!-- Intricate Zari Temple Border at Hem -->
+    <path d="M45 290 L115 290" stroke-width="2"/>
+    <path d="M48 290 L53 280 L58 290 L63 280 L68 290 L73 280 L78 290 L83 280 L88 290 L93 280 L98 290 L103 280 L108 290 L113 280" stroke-width="1.5"/>
+  </g>
+</svg>

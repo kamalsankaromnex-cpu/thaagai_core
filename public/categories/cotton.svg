@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="c3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A1C28"/>
+      <stop offset="100%" stop-color="#552233"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#c3Grad)"/>
+  <rect width="560" height="410" x="20" y="20" fill="none" stroke="#E2D6C9" stroke-width="1.5" stroke-opacity="0.3" rx="16"/>
+  <!-- Cotton Handloom Weave & Kurta Outline -->
+  <g transform="translate(220, 60)" stroke="#F7F2EB" fill="none" stroke-width="2.2" opacity="0.85">
+    <path d="M55 25 C70 45, 90 45, 105 25 L125 45 L140 115 L120 120 L115 85 L115 315 L45 315 L45 85 L40 120 L20 115 L35 45 Z"/>
+    <!-- Chettinad check pattern in middle -->
+    <rect x="50" y="100" width="60" height="180" stroke-width="1" stroke-dasharray="6,4" stroke-opacity="0.5"/>
+  </g>
+</svg>

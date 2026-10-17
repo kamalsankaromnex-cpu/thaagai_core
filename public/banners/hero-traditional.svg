@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" width="1600" height="700">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A0B1E"/>
+      <stop offset="50%" stop-color="#5E1028"/>
+      <stop offset="100%" stop-color="#741832"/>
+    </linearGradient>
+    <radialGradient id="goldGlow1" cx="80%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#B78A45" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4A0B1E" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="templeTile1" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M30 5 L55 30 L30 55 L5 30 Z" fill="none" stroke="#B78A45" stroke-width="1" stroke-opacity="0.12"/>
+      <circle cx="30" cy="30" r="4" fill="#B78A45" fill-opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="700" fill="url(#bgGrad1)"/>
+  <rect width="1600" height="700" fill="url(#goldGlow1)"/>
+  <rect width="1600" height="700" fill="url(#templeTile1)"/>
+  <!-- Decorative Heritage Arch and Kolam Motif on Right -->
+  <g transform="translate(1050, 100)" stroke="#B78A45" fill="none" stroke-width="1.5" opacity="0.35">
+    <ellipse cx="250" cy="250" rx="200" ry="220"/>
+    <ellipse cx="250" cy="250" rx="160" ry="180"/>
+    <circle cx="250" cy="250" r="120"/>
+    <circle cx="250" cy="250" r="80"/>
+    <circle cx="250" cy="250" r="40"/>
+  </g>
+</svg>

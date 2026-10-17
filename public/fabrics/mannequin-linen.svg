@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <pattern id="linen-weave" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#E6DED1" />
+      <line x1="0" y1="6" x2="12" y2="6" stroke="#DACFBF" stroke-width="1.5" />
+      <line x1="6" y1="0" x2="6" y2="12" stroke="#DACFBF" stroke-width="1.5" />
+      <circle cx="3" cy="3" r="0.8" fill="#C9BDA9" />
+      <circle cx="9" cy="9" r="0.8" fill="#C9BDA9" />
+    </pattern>
+  </defs>
+  <rect width="256" height="256" fill="url(#linen-weave)" />
+</svg>
