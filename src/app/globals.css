@@ -9,6 +9,9 @@
   --gold: #B89A62;
   --sand: #EDE5DA;
   --line: #d9cfc1;
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-noto-sans: 'Noto Sans', system-ui, -apple-system, sans-serif;
+  --font-noto-tamil: 'Noto Serif Tamil', 'Noto Sans Tamil', sans-serif;
   color-scheme: light;
 }
 
@@ -51,4 +54,150 @@ h1, h2, h3, .font-brand {
 .touch-target {
   min-height: 44px;
   min-width: 44px;
+}
+
+@layer base {
+  /* All data entry fields: Inputs, Textareas, Selects */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="submit"]):not([type="range"]):not([type="color"]):not([type="file"]),
+  textarea,
+  select {
+    color: #211D1E;
+    background-color: #FFFFFF;
+    border-color: #E2D6C9;
+    -webkit-text-fill-color: #211D1E;
+  }
+
+  /* Placeholder styling with strong, accessible contrast */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="submit"]):not([type="range"]):not([type="color"]):not([type="file"])::placeholder,
+  textarea::placeholder {
+    color: #766E6B !important;
+    opacity: 0.9 !important;
+    -webkit-text-fill-color: #766E6B !important;
+  }
+
+  /* Select dropdown options */
+  select option {
+    background-color: #FFFFFF;
+    color: #211D1E;
+  }
+
+  /* Autofill & Look-back text styling for Webkit/Blink & Gecko */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #211D1E !important;
+    -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset !important;
+    box-shadow: 0 0 0px 1000px #FFFFFF inset !important;
+    caret-color: #211D1E !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  input:autofill,
+  textarea:autofill,
+  select:autofill {
+    color: #211D1E !important;
+    background-color: #FFFFFF !important;
+  }
+
+  /* Dark mode overrides: Class .dark and system prefers-color-scheme */
+  .dark input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="submit"]):not([type="range"]):not([type="color"]):not([type="file"]),
+  .dark textarea,
+  .dark select {
+    color: #F7F2EB;
+    background-color: #1C1917;
+    border-color: rgba(226, 214, 201, 0.25);
+    -webkit-text-fill-color: #F7F2EB;
+  }
+
+  .dark input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="submit"]):not([type="range"]):not([type="color"]):not([type="file"])::placeholder,
+  .dark textarea::placeholder {
+    color: #A8A29E !important;
+    opacity: 0.85 !important;
+    -webkit-text-fill-color: #A8A29E !important;
+  }
+
+  .dark select option {
+    background-color: #1C1917;
+    color: #F7F2EB;
+  }
+
+  .dark input:-webkit-autofill,
+  .dark input:-webkit-autofill:hover,
+  .dark input:-webkit-autofill:focus,
+  .dark textarea:-webkit-autofill,
+  .dark textarea:-webkit-autofill:hover,
+  .dark textarea:-webkit-autofill:focus,
+  .dark select:-webkit-autofill,
+  .dark select:-webkit-autofill:hover,
+  .dark select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #F7F2EB !important;
+    -webkit-box-shadow: 0 0 0px 1000px #1C1917 inset !important;
+    box-shadow: 0 0 0px 1000px #1C1917 inset !important;
+    caret-color: #F7F2EB !important;
+  }
+
+  .dark input:autofill,
+  .dark textarea:autofill,
+  .dark select:autofill {
+    color: #F7F2EB !important;
+    background-color: #1C1917 !important;
+  }
+
+  /* Media query fallback for dark system preferences */
+  @media (prefers-color-scheme: dark) {
+    :root:not(.light) input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="submit"]):not([type="range"]):not([type="color"]):not([type="file"]),
+    :root:not(.light) textarea,
+    :root:not(.light) select {
+      color: #F7F2EB;
+      background-color: #1C1917;
+      border-color: rgba(226, 214, 201, 0.25);
+      -webkit-text-fill-color: #F7F2EB;
+    }
+
+    :root:not(.light) input:not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="submit"]):not([type="range"]):not([type="color"]):not([type="file"])::placeholder,
+    :root:not(.light) textarea::placeholder {
+      color: #A8A29E !important;
+      opacity: 0.85 !important;
+      -webkit-text-fill-color: #A8A29E !important;
+    }
+
+    :root:not(.light) select option {
+      background-color: #1C1917;
+      color: #F7F2EB;
+    }
+
+    :root:not(.light) input:-webkit-autofill,
+    :root:not(.light) textarea:-webkit-autofill,
+    :root:not(.light) select:-webkit-autofill {
+      -webkit-text-fill-color: #F7F2EB !important;
+      -webkit-box-shadow: 0 0 0px 1000px #1C1917 inset !important;
+      box-shadow: 0 0 0px 1000px #1C1917 inset !important;
+      caret-color: #F7F2EB !important;
+    }
+  }
+
+  /* Disabled and Read-Only State */
+  input:disabled,
+  textarea:disabled,
+  select:disabled {
+    cursor: not-allowed;
+    opacity: 0.75;
+    color: #766E6B !important;
+    -webkit-text-fill-color: #766E6B !important;
+    background-color: #F7F2EB !important;
+  }
+
+  .dark input:disabled,
+  .dark textarea:disabled,
+  .dark select:disabled {
+    color: #A8A29E !important;
+    -webkit-text-fill-color: #A8A29E !important;
+    background-color: #262321 !important;
+  }
 }

@@ -246,7 +246,7 @@ export default function AdminSuppliersPage() {
                     placeholder="e.g. Coimbatore Handlooms"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
 
@@ -260,7 +260,7 @@ export default function AdminSuppliersPage() {
                     placeholder="e.g. SUP-CBE-01"
                     value={code}
                     onChange={(e) => setCode(e.target.value.toUpperCase())}
-                    className="mt-1 h-10 w-full font-mono uppercase rounded-lg border border-thaagai-line bg-white px-3 text-xs font-bold text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-10 w-full font-mono uppercase rounded-lg border border-thaagai-line bg-white px-3 text-xs font-bold text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -275,7 +275,7 @@ export default function AdminSuppliersPage() {
                     placeholder="e.g. Sundaramurthy"
                     value={contactName}
                     onChange={(e) => setContactName(e.target.value)}
-                    className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
 
@@ -288,7 +288,7 @@ export default function AdminSuppliersPage() {
                     placeholder="e.g. 33AAAAA0000A1Z5"
                     value={gstin}
                     onChange={(e) => setGstin(e.target.value.toUpperCase())}
-                    className="mt-1 h-10 w-full font-mono uppercase rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-10 w-full font-mono uppercase rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -303,7 +303,7 @@ export default function AdminSuppliersPage() {
                     placeholder="e.g. +91 98420 12345"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
 
@@ -316,7 +316,7 @@ export default function AdminSuppliersPage() {
                     placeholder="e.g. orders@cbehandlooms.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -330,7 +330,7 @@ export default function AdminSuppliersPage() {
                   placeholder="e.g. 42 Cotton Market Road, Tiruppur, Tamil Nadu - 641602"
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
-                  className="mt-1 w-full rounded-lg border border-thaagai-line bg-white p-2.5 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 w-full rounded-lg border border-thaagai-line bg-white p-2.5 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 

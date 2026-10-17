@@ -203,7 +203,7 @@ export function Navbar({ categories: initialCategories = [], tagline }: NavbarPr
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search for churidars, bespoke suits, new arrivals..."
                 aria-label="Search storefront products"
-                className="h-10 w-full rounded-full border border-thaagai-line/80 bg-white/95 px-4 pl-10 pr-9 text-xs text-thaagai-ink placeholder:text-thaagai-ink/50 shadow-2xs transition-all focus:border-thaagai-wine focus:bg-white focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/30 dark:bg-thaagai-sandDark dark:text-white dark:placeholder:text-thaagai-inkDark/40"
+                className="h-10 w-full rounded-full border border-thaagai-line/80 bg-white/95 px-4 pl-10 pr-9 text-xs text-thaagai-ink placeholder:text-stone-400 shadow-2xs transition-all focus:border-thaagai-wine focus:bg-white focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/30 dark:bg-thaagai-sandDark dark:text-white dark:placeholder:text-stone-500"
               />
               {searchQuery && (
                 <button
@@ -280,7 +280,7 @@ export function Navbar({ categories: initialCategories = [], tagline }: NavbarPr
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search for churidars, bespoke suits, new arrivals..."
-                  className="h-11 w-full rounded-md border border-thaagai-line bg-[#FAF7F2] px-3 pl-9 text-xs text-thaagai-ink placeholder:text-thaagai-ink/50 focus:border-thaagai-wine focus:bg-white focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/30 dark:bg-thaagai-cardDark dark:text-white"
+                  className="h-11 w-full rounded-md border border-thaagai-line bg-[#FAF7F2] px-3 pl-9 text-xs text-thaagai-ink placeholder:text-stone-500 focus:border-thaagai-wine focus:bg-white focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/30 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-400"
                 />
               </div>
               <button
@@ -351,7 +351,7 @@ export function Navbar({ categories: initialCategories = [], tagline }: NavbarPr
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search for churidars, bespoke suits, new arrivals..."
-                className="h-11 w-full rounded-md border border-thaagai-line bg-white px-3 pl-9 text-xs text-thaagai-ink placeholder:text-thaagai-ink/50 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/30 dark:bg-thaagai-sandDark dark:text-white"
+                className="h-11 w-full rounded-md border border-thaagai-line bg-white px-3 pl-9 text-xs text-thaagai-ink placeholder:text-stone-500 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/30 dark:bg-thaagai-sandDark dark:text-white dark:placeholder:text-stone-400"
               />
             </div>
             <button

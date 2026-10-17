@@ -116,7 +116,7 @@ export function PincodeDeliveryChecker({
             }}
             onKeyDown={handleKeyDown}
             placeholder="Enter 6-digit PIN (e.g. 600004)"
-            className="h-10 w-full rounded-lg border border-thaagai-line bg-white pl-9 pr-3 text-xs font-mono tracking-wider text-thaagai-ink placeholder:text-thaagai-ink/40 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+            className="h-10 w-full rounded-lg border border-thaagai-line bg-white pl-9 pr-3 text-xs font-mono tracking-wider text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
           />
         </div>
         <button

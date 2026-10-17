@@ -1,28 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Noto_Sans, Noto_Serif_Tamil } from "next/font/google";
 import "./globals.css";
 import { getSiteUrl, SITE_CONFIG } from "@/lib/seo";
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-  variable: "--font-cormorant",
-  display: "swap",
-});
-
-const notoSans = Noto_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-noto-sans",
-  display: "swap",
-});
-
-const notoTamil = Noto_Serif_Tamil({
-  subsets: ["tamil"],
-  weight: ["400", "600", "700"],
-  variable: "--font-noto-tamil",
-  display: "swap",
-});
 
 const siteUrl = getSiteUrl();
 
@@ -106,7 +84,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${notoSans.variable} ${notoTamil.variable}`}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var d=document.documentElement;var m=window.matchMedia('(prefers-color-scheme: dark)');function u(e){if(e.matches){d.classList.add('dark');}else{d.classList.remove('dark');}}u(m);if(m.addEventListener){m.addEventListener('change',u);}}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body className="min-h-screen bg-thaagai-bg text-thaagai-ink antialiased selection:bg-thaagai-gold/30 selection:text-thaagai-wine dark:bg-thaagai-cardDark dark:text-thaagai-inkDark">
         {children}
       </body>

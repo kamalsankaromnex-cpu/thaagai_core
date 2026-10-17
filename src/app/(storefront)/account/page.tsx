@@ -226,7 +226,7 @@ export default function AccountPage() {
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 placeholder="e.g. Kavitha Raman"
-                className="mt-1.5 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-sm text-thaagai-ink placeholder:text-thaagai-ink/40 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="mt-1.5 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-sm text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
             </div>
 
@@ -241,7 +241,7 @@ export default function AccountPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="e.g. kavitha@example.com"
-                className="mt-1.5 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-sm text-thaagai-ink placeholder:text-thaagai-ink/40 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="mt-1.5 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-sm text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
             </div>
 

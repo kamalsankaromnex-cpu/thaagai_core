@@ -17,7 +17,7 @@ describe("Homepage Hero Carousel & Slide Configuration", () => {
     DEFAULT_SLIDES.forEach((slide) => {
       expect(slide.title.trim().length).toBeGreaterThan(0);
       expect(slide.description.trim().length).toBeGreaterThan(0);
-      expect(slide.desktopImage).toMatch(/^\/banners\/.+\.(svg|jpg|jpeg|png|webp)$/);
+      expect(slide.desktopImage).toMatch(/^(\/banners\/.+\.(svg|jpg|jpeg|png|webp)|https?:\/\/.+)$/);
       expect(slide.altText.trim().length).toBeGreaterThan(0);
       expect(slide.primaryCtaLabel.trim().length).toBeGreaterThan(0);
       expect(slide.primaryCtaUrl).toMatch(/^\//); // Internal route

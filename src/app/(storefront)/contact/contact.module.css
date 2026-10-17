@@ -120,7 +120,23 @@
   font-size: 14px;
   background: #fff;
   color: var(--text);
+  -webkit-text-fill-color: var(--text);
   transition: border-color 0.15s ease, outline 0.15s ease;
+}
+
+.formCard input::placeholder,
+.formCard textarea::placeholder {
+  color: #766e6b !important;
+  opacity: 0.85 !important;
+  -webkit-text-fill-color: #766e6b !important;
+}
+
+.formCard input:-webkit-autofill,
+.formCard select:-webkit-autofill,
+.formCard textarea:-webkit-autofill {
+  -webkit-text-fill-color: #282321 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  box-shadow: 0 0 0px 1000px #ffffff inset !important;
 }
 
 .formCard textarea {

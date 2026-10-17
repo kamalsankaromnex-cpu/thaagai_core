@@ -1423,59 +1423,59 @@ Could you confirm availability and process my order request?`;
                     <div className="space-y-3">
                       <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
                         <div>
-                          <label className="text-[11px] font-semibold text-stone-700">Bust (in)</label>
+                          <label className="text-[11px] font-semibold text-stone-700 dark:text-stone-300">Bust (in)</label>
                           <input
                             type="text"
                             value={customBust}
                             onChange={(e) => setCustomBust(e.target.value)}
                             placeholder="e.g. 36"
-                            className="mt-1 h-9 w-full rounded-lg border border-stone-300 bg-white px-2.5 text-xs text-stone-900"
+                            className="mt-1 h-9 w-full rounded-lg border border-stone-300 bg-white px-2.5 text-xs text-stone-900 placeholder:text-stone-400 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100 dark:placeholder:text-stone-400"
                           />
                         </div>
                         <div>
-                          <label className="text-[11px] font-semibold text-stone-700">Waist (in)</label>
+                          <label className="text-[11px] font-semibold text-stone-700 dark:text-stone-300">Waist (in)</label>
                           <input
                             type="text"
                             value={customWaist}
                             onChange={(e) => setCustomWaist(e.target.value)}
                             placeholder="e.g. 30"
-                            className="mt-1 h-9 w-full rounded-lg border border-stone-300 bg-white px-2.5 text-xs text-stone-900"
+                            className="mt-1 h-9 w-full rounded-lg border border-stone-300 bg-white px-2.5 text-xs text-stone-900 placeholder:text-stone-400 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100 dark:placeholder:text-stone-400"
                           />
                         </div>
                         <div>
-                          <label className="text-[11px] font-semibold text-stone-700">Hips (in)</label>
+                          <label className="text-[11px] font-semibold text-stone-700 dark:text-stone-300">Hips (in)</label>
                           <input
                             type="text"
                             value={customHips}
                             onChange={(e) => setCustomHips(e.target.value)}
                             placeholder="e.g. 40"
-                            className="mt-1 h-9 w-full rounded-lg border border-stone-300 bg-white px-2.5 text-xs text-stone-900"
+                            className="mt-1 h-9 w-full rounded-lg border border-stone-300 bg-white px-2.5 text-xs text-stone-900 placeholder:text-stone-400 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100 dark:placeholder:text-stone-400"
                           />
                         </div>
                         <div>
-                          <label className="text-[11px] font-semibold text-stone-700">Length (in)</label>
+                          <label className="text-[11px] font-semibold text-stone-700 dark:text-stone-300">Length (in)</label>
                           <input
                             type="text"
                             value={customLength}
                             onChange={(e) => setCustomLength(e.target.value)}
                             placeholder="e.g. 42"
-                            className="mt-1 h-9 w-full rounded-lg border border-stone-300 bg-white px-2.5 text-xs text-stone-900"
+                            className="mt-1 h-9 w-full rounded-lg border border-stone-300 bg-white px-2.5 text-xs text-stone-900 placeholder:text-stone-400 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100 dark:placeholder:text-stone-400"
                           />
                         </div>
                         <div>
-                          <label className="text-[11px] font-semibold text-stone-700">Shoulder (in)</label>
+                          <label className="text-[11px] font-semibold text-stone-700 dark:text-stone-300">Shoulder (in)</label>
                           <input
                             type="text"
                             value={customShoulder}
                             onChange={(e) => setCustomShoulder(e.target.value)}
                             placeholder="e.g. 14.5"
-                            className="mt-1 h-9 w-full rounded-lg border border-stone-300 bg-white px-2.5 text-xs text-stone-900"
+                            className="mt-1 h-9 w-full rounded-lg border border-stone-300 bg-white px-2.5 text-xs text-stone-900 placeholder:text-stone-400 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100 dark:placeholder:text-stone-400"
                           />
                         </div>
                       </div>
 
                       <div>
-                        <label className="text-[11px] font-semibold text-stone-700">
+                        <label className="text-[11px] font-semibold text-stone-700 dark:text-stone-300">
                           Special Tailoring Instructions & Notes
                         </label>
                         <textarea
@@ -1483,7 +1483,7 @@ Could you confirm availability and process my order request?`;
                           value={tailoringNotes}
                           onChange={(e) => setTailoringNotes(e.target.value)}
                           placeholder="e.g., Gathered bottom with ankle dori, 1.5-inch extra inner margin, boat neck piping"
-                          className="mt-1 w-full rounded-lg border border-stone-300 bg-white p-2 text-xs text-stone-900"
+                          className="mt-1 w-full rounded-lg border border-stone-300 bg-white p-2 text-xs text-stone-900 placeholder:text-stone-400 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100 dark:placeholder:text-stone-400"
                         />
                       </div>
                     </div>

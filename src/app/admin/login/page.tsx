@@ -76,7 +76,7 @@ export default function AdminLoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="owner@thaagai.com"
-                className="h-11 w-full rounded-md border border-thaagai-line bg-thaagai-bg/50 px-3 pl-9 text-sm text-thaagai-ink placeholder:text-thaagai-ink/40 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:bg-thaagai-cardDark dark:text-white"
+                className="h-11 w-full rounded-md border border-thaagai-line bg-white px-3 pl-9 text-sm text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
               <Mail className="absolute left-3 top-3 h-4 w-4 text-thaagai-ink/50" />
             </div>
@@ -93,7 +93,7 @@ export default function AdminLoginPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••••••"
-                className="h-11 w-full rounded-md border border-thaagai-line bg-thaagai-bg/50 px-3 pl-9 text-sm text-thaagai-ink placeholder:text-thaagai-ink/40 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:bg-thaagai-cardDark dark:text-white"
+                className="h-11 w-full rounded-md border border-thaagai-line bg-white px-3 pl-9 text-sm text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
               <Lock className="absolute left-3 top-3 h-4 w-4 text-thaagai-ink/50" />
             </div>

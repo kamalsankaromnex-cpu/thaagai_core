@@ -169,7 +169,7 @@ export default function AdminOrdersPage() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search by reference (TG-...), name, or phone..."
-          className="h-11 w-full rounded-md border border-thaagai-line bg-white px-3 pl-9 text-xs text-thaagai-ink placeholder:text-thaagai-ink/40 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+          className="h-11 w-full rounded-md border border-thaagai-line bg-white px-3 pl-9 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
         />
         <Search className="absolute left-3 top-3.5 h-4 w-4 text-thaagai-ink/40" />
       </div>

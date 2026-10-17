@@ -458,7 +458,7 @@ export default function CustomerAddressesPage() {
                     value={recipientName}
                     onChange={(e) => setRecipientName(e.target.value)}
                     placeholder="e.g. Kavitha Raman"
-                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
 
@@ -477,7 +477,7 @@ export default function CustomerAddressesPage() {
                       value={mobileNumber}
                       onChange={(e) => setMobileNumber(e.target.value.replace(/\D/g, ""))}
                       placeholder="9876543210"
-                      className="h-11 w-full bg-transparent px-3 text-xs text-thaagai-ink focus:outline-none dark:text-white"
+                      className="h-11 w-full bg-transparent px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:outline-none dark:text-white dark:placeholder:text-stone-500"
                     />
                   </div>
                 </div>
@@ -496,7 +496,7 @@ export default function CustomerAddressesPage() {
                     value={pinCode}
                     onChange={(e) => setPinCode(e.target.value.replace(/\D/g, ""))}
                     placeholder="e.g. 600017"
-                    className="h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs font-semibold text-thaagai-ink placeholder:font-normal focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs font-semibold text-thaagai-ink placeholder:font-normal placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                   {pinLookupLoading && (
                     <div className="absolute right-3 top-3">
@@ -523,7 +523,7 @@ export default function CustomerAddressesPage() {
                     value={houseOrFlat}
                     onChange={(e) => setHouseOrFlat(e.target.value)}
                     placeholder="e.g. Flat 302, Door No. 14"
-                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
                 <div>
@@ -535,7 +535,7 @@ export default function CustomerAddressesPage() {
                     value={buildingName}
                     onChange={(e) => setBuildingName(e.target.value)}
                     placeholder="e.g. Sri Krishna Apartments"
-                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -551,7 +551,7 @@ export default function CustomerAddressesPage() {
                   value={street}
                   onChange={(e) => setStreet(e.target.value)}
                   placeholder="e.g. 74 Gandhi Road"
-                  className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -579,7 +579,7 @@ export default function CustomerAddressesPage() {
                     value={locality}
                     onChange={(e) => setLocality(e.target.value)}
                     placeholder="e.g. T. Nagar"
-                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 )}
               </div>
@@ -595,7 +595,7 @@ export default function CustomerAddressesPage() {
                     value={landmark}
                     onChange={(e) => setLandmark(e.target.value)}
                     placeholder="Near Panagal Park"
-                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
                 <div>
@@ -608,7 +608,7 @@ export default function CustomerAddressesPage() {
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     placeholder="e.g. Chennai"
-                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
                 <div>
@@ -621,7 +621,7 @@ export default function CustomerAddressesPage() {
                     value={state}
                     onChange={(e) => setState(e.target.value)}
                     placeholder="e.g. Tamil Nadu"
-                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>

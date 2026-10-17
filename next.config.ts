@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   outputFileTracingRoot: path.resolve(__dirname),
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",

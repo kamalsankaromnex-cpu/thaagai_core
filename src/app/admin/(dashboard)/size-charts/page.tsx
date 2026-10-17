@@ -281,7 +281,7 @@ export default function AdminSizeChartsPage() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="e.g. Anarkali Churidar Sizing"
-                  className="mt-1 w-full rounded-lg border border-thaagai-line px-3.5 py-2 text-xs focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 w-full rounded-lg border border-thaagai-line bg-white px-3.5 py-2 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -292,7 +292,7 @@ export default function AdminSizeChartsPage() {
                 <select
                   value={categorySlug}
                   onChange={(e) => setCategorySlug(e.target.value)}
-                  className="mt-1 w-full rounded-lg border border-thaagai-line px-3.5 py-2 text-xs focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 w-full rounded-lg border border-thaagai-line bg-white px-3.5 py-2 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                 >
                   <option value="">Global Default</option>
                   {categories.map((cat) => (
@@ -312,7 +312,7 @@ export default function AdminSizeChartsPage() {
                   value={customFitGuide}
                   onChange={(e) => setCustomFitGuide(e.target.value)}
                   placeholder="Seam allowance notes, alteration tips, or drape instructions..."
-                  className="mt-1 w-full rounded-lg border border-thaagai-line p-3 text-xs focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 w-full rounded-lg border border-thaagai-line bg-white p-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 

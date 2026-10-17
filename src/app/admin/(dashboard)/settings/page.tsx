@@ -157,29 +157,29 @@ export default function AdminSettingsPage() {
 
         <div className="mt-4 space-y-4">
           <div>
-            <label className="block text-xs font-semibold">Store Brand Name *</label>
+            <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">Store Brand Name *</label>
             <input
               type="text"
               required
               value={storeName}
               onChange={(e) => setStoreName(e.target.value)}
-              className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+              className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-semibold">Brand Tagline</label>
+            <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">Brand Tagline</label>
             <input
               type="text"
               value={tagline}
               onChange={(e) => setTagline(e.target.value)}
               placeholder="e.g. Exquisite Ready-Made & Bespoke Churidars"
-              className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+              className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-semibold">
+            <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">
               Official WhatsApp Business Phone Number *
             </label>
             <input
@@ -188,9 +188,9 @@ export default function AdminSettingsPage() {
               value={supportPhone}
               onChange={(e) => setSupportPhone(e.target.value)}
               placeholder="919876543210 (digits only with country code)"
-              className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 font-mono text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+              className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 font-mono text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
             />
-            <span className="mt-1 block text-[11px] text-thaagai-ink/50">
+            <span className="mt-1 block text-[11px] text-thaagai-ink/50 dark:text-thaagai-inkDark/60">
               Used in the wa.me customer link. Never use symbols or dashes here.
             </span>
           </div>
@@ -205,38 +205,38 @@ export default function AdminSettingsPage() {
 
         <div className="mt-4 space-y-4">
           <div>
-            <label className="block text-xs font-semibold">Order Notice Banner *</label>
+            <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">Order Notice Banner *</label>
             <input
               type="text"
               required
               value={orderNotice}
               onChange={(e) => setOrderNotice(e.target.value)}
-              className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+              className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
             />
-            <span className="mt-1 block text-[11px] text-thaagai-ink/50">
+            <span className="mt-1 block text-[11px] text-thaagai-ink/50 dark:text-thaagai-inkDark/60">
               Displayed in the storefront footer and checkout disclaimers.
             </span>
           </div>
 
           <div>
-            <label className="block text-xs font-semibold">Standard Shipping Terms</label>
+            <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">Standard Shipping Terms</label>
             <textarea
               rows={2}
               value={standardShippingText}
               onChange={(e) => setStandardShippingText(e.target.value)}
               placeholder="Shipping fee is calculated based on destination pin code and confirmed on WhatsApp."
-              className="mt-1 w-full rounded border border-thaagai-line p-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+              className="mt-1 w-full rounded-lg border border-thaagai-line bg-white p-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-semibold">Estimated Delivery Timeframe</label>
+            <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">Estimated Delivery Timeframe</label>
             <input
               type="text"
               value={estimatedDeliveryDays}
               onChange={(e) => setEstimatedDeliveryDays(e.target.value)}
               placeholder="e.g. 3 to 7 business days across India"
-              className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+              className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
             />
           </div>
         </div>
@@ -254,7 +254,7 @@ export default function AdminSettingsPage() {
         <div className="mt-5 space-y-4">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <label className="block text-xs font-semibold">
+              <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">
                 Ready-to-Wear Dispatch Range (Days)
               </label>
               <div className="mt-1 flex items-center gap-2">
@@ -264,22 +264,22 @@ export default function AdminSettingsPage() {
                   max={10}
                   value={readyMadeDispatchMin}
                   onChange={(e) => setReadyMadeDispatchMin(Number(e.target.value))}
-                  className="h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                 />
-                <span className="text-xs text-thaagai-ink/50">to</span>
+                <span className="text-xs text-thaagai-ink/50 dark:text-thaagai-inkDark/60">to</span>
                 <input
                   type="number"
                   min={1}
                   max={10}
                   value={readyMadeDispatchMax}
                   onChange={(e) => setReadyMadeDispatchMax(Number(e.target.value))}
-                  className="h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold">
+              <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">
                 Custom Tailoring Lead Time (Days)
               </label>
               <div className="mt-1 flex items-center gap-2">
@@ -289,16 +289,16 @@ export default function AdminSettingsPage() {
                   max={30}
                   value={customStitchingMin}
                   onChange={(e) => setCustomStitchingMin(Number(e.target.value))}
-                  className="h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                 />
-                <span className="text-xs text-thaagai-ink/50">to</span>
+                <span className="text-xs text-thaagai-ink/50 dark:text-thaagai-inkDark/60">to</span>
                 <input
                   type="number"
                   min={5}
                   max={30}
                   value={customStitchingMax}
                   onChange={(e) => setCustomStitchingMax(Number(e.target.value))}
-                  className="h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                 />
               </div>
             </div>
@@ -306,7 +306,7 @@ export default function AdminSettingsPage() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <label className="block text-xs font-semibold">
+              <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">
                 South India / Same-State Transit (Days)
               </label>
               <div className="mt-1 flex items-center gap-2">
@@ -316,22 +316,22 @@ export default function AdminSettingsPage() {
                   max={7}
                   value={sameStateTransitMin}
                   onChange={(e) => setSameStateTransitMin(Number(e.target.value))}
-                  className="h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                 />
-                <span className="text-xs text-thaagai-ink/50">to</span>
+                <span className="text-xs text-thaagai-ink/50 dark:text-thaagai-inkDark/60">to</span>
                 <input
                   type="number"
                   min={1}
                   max={7}
                   value={sameStateTransitMax}
                   onChange={(e) => setSameStateTransitMax(Number(e.target.value))}
-                  className="h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold">
+              <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">
                 Rest of India Transit Range (Days)
               </label>
               <div className="mt-1 flex items-center gap-2">
@@ -341,16 +341,16 @@ export default function AdminSettingsPage() {
                   max={14}
                   value={nationalTransitMin}
                   onChange={(e) => setNationalTransitMin(Number(e.target.value))}
-                  className="h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                 />
-                <span className="text-xs text-thaagai-ink/50">to</span>
+                <span className="text-xs text-thaagai-ink/50 dark:text-thaagai-inkDark/60">to</span>
                 <input
                   type="number"
                   min={3}
                   max={14}
                   value={nationalTransitMax}
                   onChange={(e) => setNationalTransitMax(Number(e.target.value))}
-                  className="h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                 />
               </div>
             </div>
@@ -358,7 +358,7 @@ export default function AdminSettingsPage() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 border-t border-thaagai-line/40 pt-4">
             <div>
-              <label className="block text-xs font-semibold">
+              <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">
                 Free Shipping Threshold (₹)
               </label>
               <input
@@ -366,15 +366,15 @@ export default function AdminSettingsPage() {
                 min={0}
                 value={freeShippingThreshold}
                 onChange={(e) => setFreeShippingThreshold(Number(e.target.value))}
-                className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
               />
-              <span className="mt-1 block text-[11px] text-thaagai-ink/50">
+              <span className="mt-1 block text-[11px] text-thaagai-ink/50 dark:text-thaagai-inkDark/60">
                 Orders equal or exceeding this subtotal qualify for complimentary shipping.
               </span>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold">
+              <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">
                 Standard Shipping Fee (₹)
               </label>
               <input
@@ -382,9 +382,9 @@ export default function AdminSettingsPage() {
                 min={0}
                 value={standardShippingFee}
                 onChange={(e) => setStandardShippingFee(Number(e.target.value))}
-                className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
               />
-              <span className="mt-1 block text-[11px] text-thaagai-ink/50">
+              <span className="mt-1 block text-[11px] text-thaagai-ink/50 dark:text-thaagai-inkDark/60">
                 Applied when order subtotal is below the free shipping threshold.
               </span>
             </div>

@@ -274,7 +274,7 @@ export default function AdminCategoriesPage() {
                   value={name}
                   onChange={(e) => handleNameChange(e.target.value)}
                   placeholder="e.g. Straight Cut Churidars"
-                  className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-sandDark/40"
+                  className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -286,7 +286,7 @@ export default function AdminCategoriesPage() {
                   value={slug}
                   onChange={(e) => setSlug(e.target.value)}
                   placeholder="e.g. straight-cut-churidars"
-                  className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 font-mono text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-sandDark/40"
+                  className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 font-mono text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -297,7 +297,7 @@ export default function AdminCategoriesPage() {
                   onChange={(e) => setDescription(e.target.value)}
                   rows={2}
                   placeholder="Brief description for category page"
-                  className="mt-1 w-full rounded border border-thaagai-line p-2 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-sandDark/40"
+                  className="mt-1 w-full rounded border border-thaagai-line bg-white p-2 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -307,7 +307,7 @@ export default function AdminCategoriesPage() {
                   <select
                     value={parentId}
                     onChange={(e) => setParentId(e.target.value)}
-                    className="mt-1 h-10 w-full rounded border border-thaagai-line px-2 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-sandDark/40"
+                    className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-2 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                   >
                     <option value="">None (Top-Level)</option>
                     {categories
@@ -326,7 +326,7 @@ export default function AdminCategoriesPage() {
                     type="number"
                     value={sortOrder}
                     onChange={(e) => setSortOrder(Number(e.target.value))}
-                    className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-sandDark/40"
+                    className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                   />
                 </div>
               </div>

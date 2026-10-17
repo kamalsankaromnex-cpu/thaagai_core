@@ -383,7 +383,7 @@ export default function AdminInventoryPage() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             placeholder="Search by Churidar Name or SKU..."
-            className="h-9 w-full rounded-lg border border-thaagai-line bg-thaagai-sand/10 pl-9 pr-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-hidden dark:bg-thaagai-sandDark/20 dark:text-white"
+            className="h-9 w-full rounded-lg border border-thaagai-line bg-white pl-9 pr-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-hidden dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white dark:placeholder:text-stone-500"
           />
         </div>
 
@@ -758,7 +758,7 @@ export default function AdminInventoryPage() {
                     required
                     value={singleDelta}
                     onChange={(e) => setSingleDelta(Number(e.target.value))}
-                    className="h-9 flex-1 rounded-lg border border-thaagai-line px-3 text-center font-mono text-sm font-bold focus:border-thaagai-wine focus:outline-hidden dark:bg-thaagai-cardDark dark:text-white"
+                    className="h-9 flex-1 rounded-lg border border-thaagai-line bg-white px-3 text-center font-mono text-sm font-bold text-thaagai-ink focus:border-thaagai-wine focus:outline-hidden dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                   />
                   <button
                     type="button"
@@ -780,7 +780,7 @@ export default function AdminInventoryPage() {
                   value={singleReason}
                   onChange={(e) => setSingleReason(e.target.value)}
                   placeholder="e.g. Master tailor workshop delivery / Inventory audit"
-                  className="mt-1 h-9 w-full rounded-lg border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-hidden dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 h-9 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-hidden dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -858,7 +858,7 @@ export default function AdminInventoryPage() {
                             const val = Number(e.target.value);
                             setBatchDeltas((prev) => ({ ...prev, [v.id]: val }));
                           }}
-                          className="h-8 w-16 rounded border border-thaagai-line px-2 text-center font-mono text-xs font-bold focus:border-thaagai-wine focus:outline-hidden dark:bg-thaagai-cardDark dark:text-white"
+                          className="h-8 w-16 rounded border border-thaagai-line bg-white px-2 text-center font-mono text-xs font-bold text-thaagai-ink focus:border-thaagai-wine focus:outline-hidden dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                         />
                       </div>
 
@@ -887,7 +887,7 @@ export default function AdminInventoryPage() {
                   value={batchReason}
                   onChange={(e) => setBatchReason(e.target.value)}
                   placeholder="e.g. Master Tailor Batch Delivery #12"
-                  className="mt-1 h-9 w-full rounded-lg border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-hidden dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 h-9 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-hidden dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 

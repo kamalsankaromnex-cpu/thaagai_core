@@ -714,7 +714,7 @@ export function ProductReviews({
                     value={formContent}
                     onChange={(e) => setFormContent(e.target.value)}
                     placeholder="How was the fabric, fit and quality?"
-                    className="mt-1 w-full rounded-xl border border-stone-300 p-3 text-xs leading-relaxed text-stone-900 placeholder:text-stone-400 focus:border-[#8A4A38] focus:outline-none"
+                    className="mt-1 w-full rounded-xl border border-stone-300 bg-white p-3 text-xs leading-relaxed text-stone-900 placeholder:text-stone-400 focus:border-[#8A4A38] focus:outline-none dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100 dark:placeholder:text-stone-400"
                   />
                   <p className="mt-1 text-[11px] text-stone-500">
                     You can submit your star rating without writing a comment.

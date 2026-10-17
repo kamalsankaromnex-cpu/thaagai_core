@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, ArrowRight, Sparkles } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
 export interface CarouselSlide {
   id: string;
@@ -35,8 +35,8 @@ export const DEFAULT_SLIDES: CarouselSlide[] = [
     primaryCtaUrl: "/shop?type=READY_TO_WEAR",
     secondaryCtaLabel: "Explore Straight Cut",
     secondaryCtaUrl: "/shop?category=straight-cut-churidars",
-    desktopImage: "/banners/hero-traditional-clean.jpg",
-    mobileImage: "/banners/hero-traditional-clean.jpg",
+    desktopImage: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=2000&q=90",
+    mobileImage: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=90",
     altText: "Traditional Tamil handloom straight cut churidar collection",
     textAlignment: "left",
     overlayOpacity: 10,
@@ -50,11 +50,11 @@ export const DEFAULT_SLIDES: CarouselSlide[] = [
     primaryCtaUrl: "/shop?category=anarkali-churidars",
     secondaryCtaLabel: "View All Silks",
     secondaryCtaUrl: "/shop?category=silk-churidars",
-    desktopImage: "/banners/hero-festive.svg",
-    mobileImage: "/banners/hero-festive.svg",
+    desktopImage: "https://images.unsplash.com/photo-1583391733956-6c78276477e4?auto=format&fit=crop&w=2000&q=90",
+    mobileImage: "https://images.unsplash.com/photo-1583391733956-6c78276477e4?auto=format&fit=crop&w=1000&q=90",
     altText: "Festive celebration anarkali churidar suit with pure zari",
     textAlignment: "left",
-    overlayOpacity: 40,
+    overlayOpacity: 10,
   },
   {
     id: "default-3",
@@ -65,11 +65,11 @@ export const DEFAULT_SLIDES: CarouselSlide[] = [
     primaryCtaUrl: "/custom-made",
     secondaryCtaLabel: "Tailor WhatsApp Help",
     secondaryCtaUrl: "/contact",
-    desktopImage: "/banners/hero-custom.svg",
-    mobileImage: "/banners/hero-custom.svg",
+    desktopImage: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=2000&q=90",
+    mobileImage: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=90",
     altText: "Bespoke made-to-measure churidar atelier and tailoring guide",
     textAlignment: "left",
-    overlayOpacity: 40,
+    overlayOpacity: 10,
   },
   {
     id: "default-4",
@@ -80,11 +80,11 @@ export const DEFAULT_SLIDES: CarouselSlide[] = [
     primaryCtaUrl: "/shop?category=cotton-churidars",
     secondaryCtaLabel: "Unstitched Materials",
     secondaryCtaUrl: "/shop?category=unstitched-materials",
-    desktopImage: "/banners/hero-everyday.svg",
-    mobileImage: "/banners/hero-everyday.svg",
+    desktopImage: "https://images.unsplash.com/photo-1610189012906-4c6b3a7b4a8e?auto=format&fit=crop&w=2000&q=90",
+    mobileImage: "https://images.unsplash.com/photo-1610189012906-4c6b3a7b4a8e?auto=format&fit=crop&w=1000&q=90",
     altText: "Breathable cotton dailywear churidar sets",
     textAlignment: "left",
-    overlayOpacity: 45,
+    overlayOpacity: 10,
   },
 ];
 
@@ -92,9 +92,52 @@ interface HeroCarouselProps {
   slides?: CarouselSlide[];
 }
 
+function renderStyledTitle(title: string) {
+  // If title has explicit newline, split by newline
+  if (title.includes("\n")) {
+    const lines = title.split("\n");
+    const mainLines = lines.slice(0, -1);
+    const lastLine = lines[lines.length - 1];
+    return (
+      <>
+        {mainLines.map((line, i) => (
+          <span key={i} className="block">
+            {line}
+          </span>
+        ))}
+        <span className="block italic text-[#9b5151]">{lastLine}</span>
+      </>
+    );
+  }
+
+  // Prepositional or accent phrase matching for editorial luxury style
+  const accentPatterns = [
+    /^(.*?\b)(for Every Woman)$/i,
+    /^(.*?\b)(in Every Weave)$/i,
+    /^(.*?\b)(with Pure Zari)$/i,
+    /^(.*?\b)(Specifically for You)$/i,
+    /^(.*?\b)(for You)$/i,
+    /^(.*?\b)(in Pure Cotton)$/i,
+  ];
+
+  for (const pattern of accentPatterns) {
+    const match = title.match(pattern);
+    if (match) {
+      return (
+        <>
+          <span className="block sm:inline">{match[1]}</span>{" "}
+          <span className="block sm:inline italic text-[#9b5151]">{match[2]}</span>
+        </>
+      );
+    }
+  }
+
+  return title;
+}
+
 export function HeroCarousel({ slides: propSlides }: HeroCarouselProps) {
   // Use passed slides or fallback to safe defaults
-  const activeSlides = (propSlides && propSlides.length > 0) ? propSlides : DEFAULT_SLIDES;
+  const activeSlides = propSlides && propSlides.length > 0 ? propSlides : DEFAULT_SLIDES;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -194,29 +237,25 @@ export function HeroCarousel({ slides: propSlides }: HeroCarouselProps) {
   };
 
   return (
-    <div className="mx-auto w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1600px] px-3 sm:px-6 lg:px-8">
-      <section
-        role="region"
-        aria-roledescription="carousel"
-        aria-label="Homepage Hero Carousel"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        onKeyDown={handleKeyDown}
-        tabIndex={0}
-        className="group relative w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-thaagai-line shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-thaagai-gold dark:border-thaagai-line/30"
-      >
-        {/* Slides Container */}
-        <div
-          className="relative h-[480px] w-full sm:h-[540px] md:h-[580px] lg:h-[620px]"
+    <section
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="Homepage Hero Carousel"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onKeyDown={handleKeyDown}
+      tabIndex={0}
+      className="group relative w-full overflow-hidden bg-[#fffdfa] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#842f3b]"
+    >
+      {/* Slides Container - Exactly full width and matching min-h-[590px] lg:min-h-[650px] */}
+      <div
+        className="relative min-h-[590px] lg:min-h-[650px] w-full"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
         {activeSlides.map((slide, idx) => {
           const isActive = idx === currentIndex;
-          const overlayStyle = {
-            backgroundColor: `rgba(45, 12, 22, ${((slide.overlayOpacity ?? 40) / 100)})`,
-          };
 
           return (
             <div
@@ -226,7 +265,7 @@ export function HeroCarousel({ slides: propSlides }: HeroCarouselProps) {
                 isActive ? "opacity-100 z-10" : "opacity-0 pointer-events-none z-0"
               }`}
             >
-              {/* Background Responsive Image */}
+              {/* Background Responsive Image - Full width 100vw */}
               <div className="absolute inset-0">
                 <Image
                   src={slide.desktopImage}
@@ -234,20 +273,17 @@ export function HeroCarousel({ slides: propSlides }: HeroCarouselProps) {
                   fill
                   priority={idx === 0}
                   className="object-cover object-center"
-                  sizes="(max-width: 768px) 100vw, 1200px"
+                  sizes="100vw"
                 />
               </div>
 
-              {/* Gradient & Contrast Overlay */}
-              <div
-                className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"
-                style={overlayStyle}
-              />
+              {/* Warm Ivory / Blush Gradient Overlay matching About Us */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#f8eee5]/95 via-[#f8eee5]/80 to-transparent" />
 
-              {/* Real HTML Content Container */}
-              <div className="relative z-20 flex h-full items-center px-6 sm:px-12 md:px-16 lg:px-20">
+              {/* Real HTML Content Container - Centered max-w-7xl matching About Us */}
+              <div className="relative mx-auto flex min-h-[590px] max-w-7xl items-center px-6 py-20 sm:px-10 lg:min-h-[650px] lg:px-14">
                 <div
-                  className={`max-w-2xl text-white ${
+                  className={`max-w-xl text-[#4a2023] ${
                     slide.textAlignment === "center"
                       ? "mx-auto text-center"
                       : slide.textAlignment === "right"
@@ -257,36 +293,24 @@ export function HeroCarousel({ slides: propSlides }: HeroCarouselProps) {
                 >
                   {/* Eyebrow Label */}
                   {slide.eyebrow && (
-                    <div
-                      className={`inline-flex items-center gap-1.5 rounded-full border border-[#DA9F63]/70 bg-black/30 px-3.5 py-1 text-xs font-semibold tracking-wider text-[#DA9F63] backdrop-blur-sm ${
-                        slide.textAlignment === "center" ? "mx-auto" : ""
-                      }`}
-                    >
-                      <Sparkles className="h-3 w-3 text-[#DA9F63]" />
-                      <span>{slide.eyebrow}</span>
-                    </div>
+                    <p className="mb-5 text-xs font-medium uppercase tracking-[0.35em] text-[#9a4d48]">
+                      {slide.eyebrow}
+                    </p>
                   )}
 
                   {/* Heading */}
-                  <h1 className="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl lg:text-[48px] lg:leading-[1.15]">
-                    {slide.title}
+                  <h1 className="font-serif text-5xl leading-[1.12] tracking-tight sm:text-6xl lg:text-7xl text-[#4a2023]">
+                    {renderStyledTitle(slide.title)}
                   </h1>
 
-                  {/* Subtle Gold Floral Ornament Divider */}
-                  <div className="my-3 flex items-center gap-2 text-[#DA9F63]/70 text-xs">
-                    <span className="h-px w-8 bg-[#DA9F63]/50" />
-                    <span>❖</span>
-                    <span className="h-px w-8 bg-[#DA9F63]/50" />
-                  </div>
-
                   {/* Description */}
-                  <p className="mt-2 max-w-xl text-xs leading-relaxed text-[#FAF7F2]/90 sm:text-sm md:text-base">
+                  <p className="mt-6 max-w-lg text-base leading-7 text-[#655454] sm:text-lg">
                     {slide.description}
                   </p>
 
-                  {/* Call to Actions (Stacked on mobile, row on tablet/desktop) */}
+                  {/* Call to Actions */}
                   <div
-                    className={`mt-7 flex flex-col gap-3 sm:flex-row sm:items-center ${
+                    className={`mt-8 flex flex-wrap items-center gap-4 ${
                       slide.textAlignment === "center"
                         ? "justify-center"
                         : slide.textAlignment === "right"
@@ -296,7 +320,7 @@ export function HeroCarousel({ slides: propSlides }: HeroCarouselProps) {
                   >
                     <Link
                       href={slide.primaryCtaUrl}
-                      className="inline-flex h-11 sm:h-12 min-h-[44px] items-center justify-center gap-2 rounded-md bg-[#DA9F63] px-6 sm:px-7 text-xs sm:text-sm font-bold text-[#2B1810] shadow-md transition-all hover:bg-[#E5AF78] hover:scale-[1.02] focus-visible:outline"
+                      className="inline-flex items-center gap-3 rounded-full bg-[#842f3b] px-7 py-3.5 text-sm font-medium text-white shadow-sm transition hover:bg-[#65232d] hover:scale-[1.02] active:scale-[0.98] focus-visible:outline"
                     >
                       <span>{slide.primaryCtaLabel}</span>
                       <ArrowRight className="h-4 w-4" />
@@ -305,12 +329,46 @@ export function HeroCarousel({ slides: propSlides }: HeroCarouselProps) {
                     {slide.secondaryCtaLabel && slide.secondaryCtaUrl && (
                       <Link
                         href={slide.secondaryCtaUrl}
-                        className="inline-flex h-11 sm:h-12 min-h-[44px] items-center justify-center gap-2 rounded-md border border-[#DA9F63]/50 bg-black/40 px-5 sm:px-6 text-xs sm:text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-black/60 hover:border-[#DA9F63] focus-visible:outline"
+                        className="inline-flex items-center gap-2 rounded-full border border-[#b45b50] bg-white/70 px-6 py-3.5 text-sm font-medium text-[#842f3b] backdrop-blur-xs transition hover:bg-white hover:scale-[1.02] active:scale-[0.98] focus-visible:outline"
                       >
                         <span>{slide.secondaryCtaLabel}</span>
                       </Link>
                     )}
                   </div>
+
+                  {/* Signature Slider Indicator directly below CTAs */}
+                  {totalSlides > 1 && (
+                    <div
+                      role="tablist"
+                      aria-label="Carousel pagination"
+                      className={`mt-10 flex items-center gap-2 ${
+                        slide.textAlignment === "center"
+                          ? "justify-center"
+                          : slide.textAlignment === "right"
+                          ? "justify-end"
+                          : "justify-start"
+                      }`}
+                    >
+                      {activeSlides.map((_, pIdx) => {
+                        const isCurrent = pIdx === currentIndex;
+                        return (
+                          <button
+                            key={pIdx}
+                            type="button"
+                            role="tab"
+                            aria-selected={isCurrent}
+                            aria-label={`Go to slide ${pIdx + 1} of ${totalSlides}`}
+                            onClick={() => goToSlide(pIdx)}
+                            className={`transition-all duration-300 rounded-full focus-visible:outline ${
+                              isCurrent
+                                ? "h-2.5 w-8 bg-[#842f3b]"
+                                : "h-2.5 w-2.5 bg-[#d9bdb0] hover:bg-[#842f3b]/60"
+                            }`}
+                          />
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -325,7 +383,7 @@ export function HeroCarousel({ slides: propSlides }: HeroCarouselProps) {
             type="button"
             onClick={prevSlide}
             aria-label="Previous Slide"
-            className="absolute left-3 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/35 text-white backdrop-blur-md transition-all hover:bg-black/60 hover:scale-105 focus-visible:outline sm:left-5"
+            className="absolute left-4 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#eadbd3] bg-white/80 text-[#842f3b] shadow-sm backdrop-blur-md transition-all hover:bg-white hover:text-[#65232d] hover:scale-105 active:scale-95 focus-visible:outline sm:left-8"
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
@@ -334,41 +392,12 @@ export function HeroCarousel({ slides: propSlides }: HeroCarouselProps) {
             type="button"
             onClick={nextSlide}
             aria-label="Next Slide"
-            className="absolute right-3 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/35 text-white backdrop-blur-md transition-all hover:bg-black/60 hover:scale-105 focus-visible:outline sm:right-5"
+            className="absolute right-4 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#eadbd3] bg-white/80 text-[#842f3b] shadow-sm backdrop-blur-md transition-all hover:bg-white hover:text-[#65232d] hover:scale-105 active:scale-95 focus-visible:outline sm:right-8"
           >
             <ChevronRight className="h-6 w-6" />
           </button>
         </>
       )}
-
-      {/* Pagination Indicators (Dots / Active Pills) */}
-      {totalSlides > 1 && (
-        <div
-          role="tablist"
-          aria-label="Carousel pagination"
-          className="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/20 bg-black/40 px-3.5 py-1.5 backdrop-blur-md"
-        >
-          {activeSlides.map((_, idx) => {
-            const isCurrent = idx === currentIndex;
-            return (
-              <button
-                key={idx}
-                type="button"
-                role="tab"
-                aria-selected={isCurrent}
-                aria-label={`Slide ${idx + 1} of ${totalSlides}`}
-                onClick={() => goToSlide(idx)}
-                className={`transition-all duration-300 rounded-full focus-visible:outline ${
-                  isCurrent
-                    ? "h-2.5 w-2.5 bg-[#DA9F63] ring-2 ring-[#DA9F63]/40"
-                    : "h-2.5 w-2.5 bg-white/60 hover:bg-white/90"
-                }`}
-              />
-            );
-          })}
-        </div>
-      )}
-      </section>
-    </div>
+    </section>
   );
 }

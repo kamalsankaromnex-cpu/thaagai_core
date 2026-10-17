@@ -148,7 +148,7 @@ export default function TrackOrderPage() {
               placeholder="e.g. ORD-2026-0001"
               value={reference}
               onChange={(e) => setReference(e.target.value)}
-              className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 font-mono text-xs font-bold uppercase text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+              className="mt-1 h-11 w-full rounded-lg border border-thaagai-line bg-white px-3 font-mono text-xs font-bold uppercase text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
             />
           </div>
 
@@ -157,7 +157,7 @@ export default function TrackOrderPage() {
               10-Digit Mobile Number *
             </label>
             <div className="relative mt-1">
-              <span className="absolute left-3 top-3 font-mono text-xs text-thaagai-ink/60">
+              <span className="absolute left-3 top-3 font-mono text-xs text-thaagai-ink/60 dark:text-thaagai-inkDark/60">
                 +91
               </span>
               <input
@@ -167,7 +167,7 @@ export default function TrackOrderPage() {
                 placeholder="98765 43210"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
-                className="h-11 w-full rounded-lg border border-thaagai-line bg-white pl-12 pr-3 font-mono text-xs font-bold text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="h-11 w-full rounded-lg border border-thaagai-line bg-white pl-12 pr-3 font-mono text-xs font-bold text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
             </div>
           </div>

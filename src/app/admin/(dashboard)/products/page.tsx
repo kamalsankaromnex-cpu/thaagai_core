@@ -131,15 +131,15 @@ export default function AdminProductsPage() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search by product title or SKU..."
-            className="h-10 w-full rounded border border-thaagai-line pl-9 pr-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+            className="h-10 w-full rounded border border-thaagai-line bg-white pl-9 pr-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
           />
-          <Search className="absolute left-3 top-3 h-4 w-4 text-thaagai-ink/40" />
+          <Search className="absolute left-3 top-3 h-4 w-4 text-thaagai-ink/40 dark:text-thaagai-inkDark/40" />
         </div>
 
         <select
           value={statusFilter}
           onChange={(e) => setStatusFilter(e.target.value)}
-          className="h-10 rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+          className="h-10 rounded border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
         >
           <option value="">All Statuses</option>
           <option value="ACTIVE">Active</option>

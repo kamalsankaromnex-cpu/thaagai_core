@@ -272,7 +272,7 @@ export function AnnouncementBarManager() {
             placeholder="Enter announcement text in Tamil, English, or bilingual..."
             maxLength={300}
             required
-            className="mt-1.5 w-full rounded-xl border border-thaagai-line bg-white p-3 text-xs text-thaagai-ink placeholder:text-thaagai-ink/40 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/40 dark:text-white"
+            className="mt-1.5 w-full rounded-xl border border-thaagai-line bg-white p-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
           />
         </div>
 
@@ -292,7 +292,7 @@ export function AnnouncementBarManager() {
               value={config.link || ""}
               onChange={(e) => setConfig({ ...config, link: e.target.value })}
               placeholder="e.g. /shop?filter=offers or /custom-made"
-              className="mt-1.5 h-10 w-full rounded-xl border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-thaagai-ink/40 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/40 dark:text-white"
+              className="mt-1.5 h-10 w-full rounded-xl border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
             />
           </div>
 

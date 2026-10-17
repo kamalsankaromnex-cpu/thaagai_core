@@ -471,7 +471,7 @@ export default function AdminFinancePage() {
                 placeholder="Search notes or methods..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="h-9 rounded-lg border border-thaagai-line/80 bg-white pl-8 pr-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="h-9 rounded-lg border border-thaagai-line/80 bg-white pl-8 pr-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
             </div>
           </div>
@@ -682,7 +682,7 @@ export default function AdminFinancePage() {
                       placeholder="e.g. 2400"
                       value={formAmount}
                       onChange={(e) => setFormAmount(e.target.value)}
-                      className="h-10 w-full rounded-lg border border-thaagai-line bg-white pl-8 pr-3 text-sm font-bold text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                      className="h-10 w-full rounded-lg border border-thaagai-line bg-white pl-8 pr-3 text-sm font-bold text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                     />
                   </div>
                 </div>
@@ -748,7 +748,7 @@ export default function AdminFinancePage() {
                   placeholder="e.g. 500 Luxury Gold Foil Box Packaging restock"
                   value={formDescription}
                   onChange={(e) => setFormDescription(e.target.value)}
-                  className="mt-1 w-full rounded-lg border border-thaagai-line bg-white p-2.5 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 w-full rounded-lg border border-thaagai-line bg-white p-2.5 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -840,7 +840,7 @@ export default function AdminFinancePage() {
                       placeholder="0.00"
                       value={editAmount}
                       onChange={(e) => setEditAmount(e.target.value)}
-                      className="w-full rounded-lg border border-thaagai-line bg-white p-2.5 pl-7 text-xs font-mono font-bold text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                      className="w-full rounded-lg border border-thaagai-line bg-white p-2.5 pl-7 text-xs font-mono font-bold text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                     />
                   </div>
                 </div>
@@ -884,9 +884,10 @@ export default function AdminFinancePage() {
                 <input
                   type="text"
                   required
+                  placeholder="Reference note"
                   value={editDescription}
                   onChange={(e) => setEditDescription(e.target.value)}
-                  className="mt-1 w-full rounded-lg border border-thaagai-line bg-white p-2.5 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 w-full rounded-lg border border-thaagai-line bg-white p-2.5 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 

@@ -481,7 +481,7 @@ export default function AdminPurchasesPage() {
                               return copy;
                             });
                           }}
-                          className="mt-1.5 h-8 w-full rounded border border-thaagai-line bg-white px-2 text-xs text-thaagai-ink outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                          className="mt-1.5 h-8 w-full rounded border border-thaagai-line bg-white px-2 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                         />
                       )}
                     </div>
@@ -538,7 +538,7 @@ export default function AdminPurchasesPage() {
                   placeholder="e.g. Urgent festive dispatch by Friday via Tiruppur Express"
                   value={poNotes}
                   onChange={(e) => setPoNotes(e.target.value)}
-                  className="mt-1 w-full rounded-lg border border-thaagai-line bg-white p-2.5 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 w-full rounded-lg border border-thaagai-line bg-white p-2.5 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -606,7 +606,7 @@ export default function AdminPurchasesPage() {
                   placeholder="e.g. INV-2026-991"
                   value={receiveInvoiceNumber}
                   onChange={(e) => setReceiveInvoiceNumber(e.target.value)}
-                  className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 

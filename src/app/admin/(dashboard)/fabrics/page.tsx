@@ -272,7 +272,7 @@ export default function AdminFabricsPage() {
               ) : fabrics.length === 0 ? (
                 <tr>
                   <td colSpan={9} className="py-8 text-center text-stone-400">
-                    No fabrics found. Click "Add New Fabric" above.
+                    No fabrics found. Click &quot;Add New Fabric&quot; above.
                   </td>
                 </tr>
               ) : (
@@ -517,7 +517,7 @@ export default function AdminFabricsPage() {
                     required
                     value={editingFabric.fabricId || ""}
                     onChange={(e) => setEditingFabric({ ...editingFabric, fabricId: e.target.value })}
-                    className="mt-1 w-full rounded-lg border border-stone-300 p-2 text-xs font-mono font-bold dark:bg-stone-800 dark:border-stone-700"
+                    className="mt-1 w-full rounded-lg border border-stone-300 bg-white p-2 text-xs font-mono font-bold text-stone-900 placeholder:text-stone-400 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100 dark:placeholder:text-stone-500"
                     placeholder="e.g. FAB-CHET-04"
                   />
                 </div>
@@ -531,7 +531,7 @@ export default function AdminFabricsPage() {
                     required
                     value={editingFabric.name || ""}
                     onChange={(e) => setEditingFabric({ ...editingFabric, name: e.target.value })}
-                    className="mt-1 w-full rounded-lg border border-stone-300 p-2 text-xs font-semibold dark:bg-stone-800 dark:border-stone-700"
+                    className="mt-1 w-full rounded-lg border border-stone-300 bg-white p-2 text-xs font-semibold text-stone-900 placeholder:text-stone-400 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100 dark:placeholder:text-stone-500"
                     placeholder="e.g. Madurai Sungudi Mustard Yellow"
                   />
                 </div>
@@ -557,7 +557,7 @@ export default function AdminFabricsPage() {
                         metalness,
                       });
                     }}
-                    className="mt-1 w-full rounded-lg border border-stone-300 p-2 text-xs dark:bg-stone-800 dark:border-stone-700"
+                    className="mt-1 w-full rounded-lg border border-stone-300 bg-white p-2 text-xs text-stone-900 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100"
                   >
                     <option value="COTTON">Handloom Cotton (Matte)</option>
                     <option value="RAW_SILK">Raw Silk (Sheen)</option>
@@ -578,7 +578,7 @@ export default function AdminFabricsPage() {
                         placementMode: e.target.value as FabricPlacementMode,
                       })
                     }
-                    className="mt-1 w-full rounded-lg border border-stone-300 p-2 text-xs dark:bg-stone-800 dark:border-stone-700"
+                    className="mt-1 w-full rounded-lg border border-stone-300 bg-white p-2 text-xs text-stone-900 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100"
                   >
                     <option value="ALL_OVER_REPEAT">All-Over Repeat (Buttas / Florals)</option>
                     <option value="BORDER_HEM">Border Placement (Temple Hem & Cuffs)</option>
@@ -594,7 +594,7 @@ export default function AdminFabricsPage() {
                     onChange={(e) =>
                       setEditingFabric({ ...editingFabric, status: e.target.value as any })
                     }
-                    className="mt-1 w-full rounded-lg border border-stone-300 p-2 text-xs dark:bg-stone-800 dark:border-stone-700"
+                    className="mt-1 w-full rounded-lg border border-stone-300 bg-white p-2 text-xs text-stone-900 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100"
                   >
                     <option value="ACTIVE">Active (Live in 3D Studio)</option>
                     <option value="DRAFT">Draft</option>
@@ -691,7 +691,7 @@ export default function AdminFabricsPage() {
                     onChange={(e) =>
                       setEditingFabric({ ...editingFabric, pricePerMeter: Number(e.target.value) })
                     }
-                    className="mt-1 w-full rounded-lg border border-stone-300 p-2 text-xs font-bold dark:bg-stone-800 dark:border-stone-700"
+                    className="mt-1 w-full rounded-lg border border-stone-300 bg-white p-2 text-xs font-bold text-stone-900 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100"
                   />
                 </div>
 
@@ -708,7 +708,7 @@ export default function AdminFabricsPage() {
                     onChange={(e) =>
                       setEditingFabric({ ...editingFabric, stockMeters: Number(e.target.value) })
                     }
-                    className="mt-1 w-full rounded-lg border border-stone-300 p-2 text-xs font-bold dark:bg-stone-800 dark:border-stone-700"
+                    className="mt-1 w-full rounded-lg border border-stone-300 bg-white p-2 text-xs font-bold text-stone-900 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100"
                   />
                 </div>
               </div>

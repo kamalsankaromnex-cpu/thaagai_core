@@ -248,7 +248,7 @@ export default function AdminPromotionsPage() {
                   placeholder="e.g. THAAGAI10"
                   value={code}
                   onChange={(e) => setCode(e.target.value.toUpperCase())}
-                  className="mt-1 h-10 w-full font-mono uppercase rounded-lg border border-thaagai-line bg-white px-3 text-xs font-bold text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 h-10 w-full font-mono uppercase rounded-lg border border-thaagai-line bg-white px-3 text-xs font-bold text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -262,7 +262,7 @@ export default function AdminPromotionsPage() {
                   placeholder="e.g. Inaugural Boutique Welcome Voucher"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
-                  className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -292,7 +292,7 @@ export default function AdminPromotionsPage() {
                     placeholder={discountType === "PERCENTAGE" ? "e.g. 10" : "e.g. 500"}
                     value={discountValue}
                     onChange={(e) => setDiscountValue(e.target.value)}
-                    className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs font-bold text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs font-bold text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -306,7 +306,7 @@ export default function AdminPromotionsPage() {
                   placeholder="e.g. 2999"
                   value={minOrderAmount}
                   onChange={(e) => setMinOrderAmount(e.target.value)}
-                  className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                  className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 

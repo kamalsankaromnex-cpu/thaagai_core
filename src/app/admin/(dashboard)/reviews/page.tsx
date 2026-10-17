@@ -219,7 +219,7 @@ export default function AdminReviewsPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search reviews, orders, names..."
-            className="h-9 w-full rounded-lg border border-thaagai-line bg-thaagai-sand/20 pl-9 pr-3 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+            className="h-9 w-full rounded-lg border border-thaagai-line bg-white pl-9 pr-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
           />
         </div>
       </div>
@@ -401,7 +401,7 @@ export default function AdminReviewsPage() {
                       value={adminNotesText}
                       onChange={(e) => setAdminNotesText(e.target.value)}
                       placeholder="Add internal moderation note..."
-                      className="h-8 flex-1 rounded border border-thaagai-line px-2 text-xs"
+                      className="h-8 flex-1 rounded border border-thaagai-line bg-white px-2 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                     />
                     <button
                       onClick={() => handleSaveNotes(rev.id)}

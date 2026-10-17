@@ -195,9 +195,9 @@ export default function CustomerMeasurementsPage() {
                 placeholder={unit === "INCHES" ? "e.g. 42" : "e.g. 106"}
                 value={kurtaLength}
                 onChange={(e) => setKurtaLength(e.target.value)}
-                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
-              <span className="mt-1 block text-[10px] text-thaagai-ink/50">High shoulder to knee / mid-calf</span>
+              <span className="mt-1 block text-[10px] text-thaagai-ink/60 dark:text-thaagai-inkDark/60">High shoulder to knee / mid-calf</span>
             </div>
 
             <div>
@@ -209,9 +209,9 @@ export default function CustomerMeasurementsPage() {
                 placeholder={unit === "INCHES" ? "e.g. 36" : "e.g. 91"}
                 value={bust}
                 onChange={(e) => setBust(e.target.value)}
-                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
-              <span className="mt-1 block text-[10px] text-thaagai-ink/50">Fullest part of bust horizontally</span>
+              <span className="mt-1 block text-[10px] text-thaagai-ink/60 dark:text-thaagai-inkDark/60">Fullest part of bust horizontally</span>
             </div>
 
             <div>
@@ -223,9 +223,9 @@ export default function CustomerMeasurementsPage() {
                 placeholder={unit === "INCHES" ? "e.g. 30" : "e.g. 76"}
                 value={waist}
                 onChange={(e) => setWaist(e.target.value)}
-                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
-              <span className="mt-1 block text-[10px] text-thaagai-ink/50">1–2&quot; above navel narrowest point</span>
+              <span className="mt-1 block text-[10px] text-thaagai-ink/60 dark:text-thaagai-inkDark/60">1–2&quot; above navel narrowest point</span>
             </div>
 
             <div>
@@ -237,9 +237,9 @@ export default function CustomerMeasurementsPage() {
                 placeholder={unit === "INCHES" ? "e.g. 40" : "e.g. 101"}
                 value={hips}
                 onChange={(e) => setHips(e.target.value)}
-                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
-              <span className="mt-1 block text-[10px] text-thaagai-ink/50">Widest part of hips/seat</span>
+              <span className="mt-1 block text-[10px] text-thaagai-ink/60 dark:text-thaagai-inkDark/60">Widest part of hips/seat</span>
             </div>
 
             <div>
@@ -251,9 +251,9 @@ export default function CustomerMeasurementsPage() {
                 placeholder={unit === "INCHES" ? "e.g. 14.5" : "e.g. 37"}
                 value={shoulderWidth}
                 onChange={(e) => setShoulderWidth(e.target.value)}
-                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
-              <span className="mt-1 block text-[10px] text-thaagai-ink/50">Tip of one shoulder to the other</span>
+              <span className="mt-1 block text-[10px] text-thaagai-ink/60 dark:text-thaagai-inkDark/60">Tip of one shoulder to the other</span>
             </div>
 
             <div>
@@ -265,9 +265,9 @@ export default function CustomerMeasurementsPage() {
                 placeholder={unit === "INCHES" ? "e.g. 17" : "e.g. 43"}
                 value={sleeveLength}
                 onChange={(e) => setSleeveLength(e.target.value)}
-                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
-              <span className="mt-1 block text-[10px] text-thaagai-ink/50">Shoulder edge down to wrist/elbow</span>
+              <span className="mt-1 block text-[10px] text-thaagai-ink/60 dark:text-thaagai-inkDark/60">Shoulder edge down to wrist/elbow</span>
             </div>
           </div>
         </div>
@@ -291,9 +291,9 @@ export default function CustomerMeasurementsPage() {
                 placeholder={unit === "INCHES" ? "e.g. 39" : "e.g. 99"}
                 value={bottomLength}
                 onChange={(e) => setBottomLength(e.target.value)}
-                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
-              <span className="mt-1 block text-[10px] text-thaagai-ink/50">Waist/navel down to ankle bone</span>
+              <span className="mt-1 block text-[10px] text-thaagai-ink/60 dark:text-thaagai-inkDark/60">Waist/navel down to ankle bone</span>
             </div>
 
             <div>
@@ -305,9 +305,9 @@ export default function CustomerMeasurementsPage() {
                 placeholder={unit === "INCHES" ? "e.g. 12" : "e.g. 30"}
                 value={ankleRound}
                 onChange={(e) => setAnkleRound(e.target.value)}
-                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="mt-1 h-10 w-full rounded-lg border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
-              <span className="mt-1 block text-[10px] text-thaagai-ink/50">Circumference at ankle</span>
+              <span className="mt-1 block text-[10px] text-thaagai-ink/60 dark:text-thaagai-inkDark/60">Circumference at ankle</span>
             </div>
           </div>
         </div>
@@ -325,7 +325,7 @@ export default function CustomerMeasurementsPage() {
             placeholder="e.g. Prefer 1 inch extra ease around the bust for comfort; high boat neck preferred on all suits."
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
-            className="mt-3 w-full rounded-lg border border-thaagai-line bg-white p-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+            className="mt-3 w-full rounded-lg border border-thaagai-line bg-white p-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
           />
         </div>
 

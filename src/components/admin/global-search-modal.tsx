@@ -189,7 +189,7 @@ export function GlobalSearchModal({ isOpen, onClose }: GlobalSearchModalProps) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search products, orders, customers, inventory, finance..."
-            className="w-full bg-transparent px-3 text-sm font-medium text-thaagai-ink placeholder-thaagai-ink/40 outline-none dark:text-white dark:placeholder-thaagai-inkDark/40"
+            className="w-full bg-transparent px-3 text-sm font-medium text-thaagai-ink placeholder:text-stone-400 outline-none dark:text-white dark:placeholder:text-stone-500"
           />
           {loading ? (
             <Loader2 className="h-4 w-4 animate-spin text-thaagai-gold" />

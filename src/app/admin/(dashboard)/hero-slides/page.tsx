@@ -523,7 +523,7 @@ export default function AdminHeroSlidesPage() {
                   value={eyebrow}
                   onChange={(e) => setEyebrow(e.target.value)}
                   placeholder="e.g. Handloom Heritage, Festive Collection"
-                  className="mt-1.5 w-full rounded-lg border border-thaagai-line px-3.5 py-2.5 text-sm text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white"
+                  className="mt-1.5 w-full rounded-lg border border-thaagai-line bg-white px-3.5 py-2.5 text-sm text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -538,7 +538,7 @@ export default function AdminHeroSlidesPage() {
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                   placeholder="e.g. Traditional Elegance in Every Weave"
-                  className="mt-1.5 w-full rounded-lg border border-thaagai-line px-3.5 py-2.5 text-sm font-serif font-bold text-thaagai-wine focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white"
+                  className="mt-1.5 w-full rounded-lg border border-thaagai-line bg-white px-3.5 py-2.5 text-sm font-serif font-bold text-thaagai-wine placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -553,7 +553,7 @@ export default function AdminHeroSlidesPage() {
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   placeholder="Craftsmanship details, fabric notes, or celebration highlights..."
-                  className="mt-1.5 w-full rounded-lg border border-thaagai-line px-3.5 py-2.5 text-sm text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white"
+                  className="mt-1.5 w-full rounded-lg border border-thaagai-line bg-white px-3.5 py-2.5 text-sm text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -569,7 +569,7 @@ export default function AdminHeroSlidesPage() {
                     value={desktopImage}
                     onChange={(e) => setDesktopImage(e.target.value)}
                     placeholder="/banners/hero-traditional.svg or uploaded URL"
-                    className="flex-1 rounded-lg border border-thaagai-line px-3.5 py-2.5 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white"
+                    className="flex-1 rounded-lg border border-thaagai-line bg-white px-3.5 py-2.5 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                   <input
                     type="file"
@@ -620,7 +620,7 @@ export default function AdminHeroSlidesPage() {
                   value={altText}
                   onChange={(e) => setAltText(e.target.value)}
                   placeholder="e.g. Traditional Tamil Handloom Churidar Suit"
-                  className="mt-1.5 w-full rounded-lg border border-thaagai-line px-3.5 py-2.5 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white"
+                  className="mt-1.5 w-full rounded-lg border border-thaagai-line bg-white px-3.5 py-2.5 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -636,7 +636,7 @@ export default function AdminHeroSlidesPage() {
                     value={primaryCtaLabel}
                     onChange={(e) => setPrimaryCtaLabel(e.target.value)}
                     placeholder="e.g. Shop Ready-to-Wear"
-                    className="mt-1.5 w-full rounded-lg border border-thaagai-line px-3 py-2 text-xs focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white"
+                    className="mt-1.5 w-full rounded-lg border border-thaagai-line bg-white px-3 py-2 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
                 <div>
@@ -649,7 +649,7 @@ export default function AdminHeroSlidesPage() {
                     value={primaryCtaUrl}
                     onChange={(e) => setPrimaryCtaUrl(e.target.value)}
                     placeholder="e.g. /shop?type=READY_TO_WEAR"
-                    className="mt-1.5 w-full rounded-lg border border-thaagai-line px-3 py-2 text-xs font-mono focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white"
+                    className="mt-1.5 w-full rounded-lg border border-thaagai-line bg-white px-3 py-2 text-xs font-mono text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -664,7 +664,7 @@ export default function AdminHeroSlidesPage() {
                     value={secondaryCtaLabel}
                     onChange={(e) => setSecondaryCtaLabel(e.target.value)}
                     placeholder="e.g. Explore Straight Cut"
-                    className="mt-1.5 w-full rounded-lg border border-thaagai-line px-3 py-2 text-xs focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white"
+                    className="mt-1.5 w-full rounded-lg border border-thaagai-line bg-white px-3 py-2 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
                 <div>
@@ -676,7 +676,7 @@ export default function AdminHeroSlidesPage() {
                     value={secondaryCtaUrl}
                     onChange={(e) => setSecondaryCtaUrl(e.target.value)}
                     placeholder="e.g. /shop?category=straight-cut-churidars"
-                    className="mt-1.5 w-full rounded-lg border border-thaagai-line px-3 py-2 text-xs font-mono focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white"
+                    className="mt-1.5 w-full rounded-lg border border-thaagai-line bg-white px-3 py-2 text-xs font-mono text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -690,7 +690,7 @@ export default function AdminHeroSlidesPage() {
                   <select
                     value={textAlignment}
                     onChange={(e) => setTextAlignment(e.target.value)}
-                    className="mt-1.5 w-full rounded-lg border border-thaagai-line px-3 py-2 text-xs focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white"
+                    className="mt-1.5 w-full rounded-lg border border-thaagai-line bg-white px-3 py-2 text-xs text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                   >
                     <option value="left">Left Aligned</option>
                     <option value="center">Centered</option>
@@ -719,7 +719,7 @@ export default function AdminHeroSlidesPage() {
                     type="number"
                     value={sortOrder}
                     onChange={(e) => setSortOrder(Number(e.target.value))}
-                    className="mt-1.5 w-full rounded-lg border border-thaagai-line px-3 py-2 text-xs focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-sandDark/20 dark:text-white"
+                    className="mt-1.5 w-full rounded-lg border border-thaagai-line bg-white px-3 py-2 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -743,14 +743,14 @@ export default function AdminHeroSlidesPage() {
                     type="datetime-local"
                     value={startDate}
                     onChange={(e) => setStartDate(e.target.value)}
-                    className="rounded border border-thaagai-line px-2 py-1 text-[11px] dark:border-thaagai-line/40 dark:bg-thaagai-cardDark"
+                    className="rounded border border-thaagai-line bg-white px-2 py-1 text-[11px] text-thaagai-ink dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                   />
                   <span className="text-thaagai-ink/50">&rarr;</span>
                   <input
                     type="datetime-local"
                     value={endDate}
                     onChange={(e) => setEndDate(e.target.value)}
-                    className="rounded border border-thaagai-line px-2 py-1 text-[11px] dark:border-thaagai-line/40 dark:bg-thaagai-cardDark"
+                    className="rounded border border-thaagai-line bg-white px-2 py-1 text-[11px] text-thaagai-ink dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                   />
                 </div>
               </div>

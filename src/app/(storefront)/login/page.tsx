@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -167,7 +167,7 @@ function LoginContent() {
                   placeholder="98765 43210"
                   required
                   autoFocus
-                  className="h-11 w-full bg-transparent px-3 text-sm text-thaagai-ink placeholder:text-thaagai-ink/40 focus:outline-none dark:text-white"
+                  className="h-11 w-full bg-transparent px-3 text-sm text-thaagai-ink placeholder:text-stone-400 focus:outline-none dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
               <p className="mt-1 text-[11px] text-thaagai-ink/60 dark:text-thaagai-inkDark/60">
@@ -225,7 +225,7 @@ function LoginContent() {
                 placeholder="000000"
                 required
                 autoFocus
-                className="mt-1.5 h-12 w-full rounded-lg border border-thaagai-line bg-white text-center font-mono text-xl font-bold tracking-widest text-thaagai-ink shadow-sm placeholder:text-thaagai-ink/30 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                className="mt-1.5 h-12 w-full rounded-lg border border-thaagai-line bg-white text-center font-mono text-xl font-bold tracking-widest text-thaagai-ink shadow-sm placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none focus:ring-1 focus:ring-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
               />
             </div>
 

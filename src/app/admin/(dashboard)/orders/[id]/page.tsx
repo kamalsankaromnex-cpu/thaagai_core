@@ -608,25 +608,25 @@ export default function OrderDetailPage({ params }: OrderDetailPageProps) {
 
             <div className="mt-4 space-y-4">
               <div>
-                <label className="block text-xs font-semibold">Courier Partner</label>
+                <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">Courier Partner</label>
                 <input
                   type="text"
                   value={courier}
                   onChange={(e) => setCourier(e.target.value)}
                   placeholder="e.g. DTDC, Delhivery, BlueDart, India Post"
-                  className="mt-1 h-10 w-full rounded-md border border-thaagai-line px-3 text-xs dark:bg-thaagai-sandDark dark:text-white"
+                  className="mt-1 h-10 w-full rounded-md border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-semibold">Tracking Number / AWB</label>
+                <label className="block text-xs font-semibold text-thaagai-ink dark:text-white">Tracking Number / AWB</label>
                 <input
                   type="text"
                   required
                   value={trackingNumber}
                   onChange={(e) => setTrackingNumber(e.target.value)}
                   placeholder="e.g. D12345678"
-                  className="mt-1 h-10 w-full rounded-md border border-thaagai-line px-3 text-xs dark:bg-thaagai-sandDark dark:text-white"
+                  className="mt-1 h-10 w-full rounded-md border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
             </div>

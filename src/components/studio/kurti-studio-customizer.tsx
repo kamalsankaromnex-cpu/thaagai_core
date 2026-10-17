@@ -571,7 +571,7 @@ Could your master tailor confirm fabric stock and pattern cut?`;
                     Standard Size
                   </h4>
                   <span className="text-xs text-stone-500">
-                    Bust: {size === "S" ? "36" : size === "M" ? "38" : size === "L" ? "40" : size === "XL" ? "42" : size === "XXL" ? "44" : "46"}"
+                    Bust: {size === "S" ? "36" : size === "M" ? "38" : size === "L" ? "40" : size === "XL" ? "42" : size === "XXL" ? "44" : "46"}&quot;
                   </span>
                 </div>
                 <div className="mt-2 flex flex-wrap gap-2">

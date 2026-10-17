@@ -454,7 +454,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                   value={name}
                   onChange={(e) => handleNameChange(e.target.value)}
                   placeholder="e.g. Handloom Cotton Kurta"
-                  className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -467,7 +467,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                     value={slug}
                     onChange={(e) => setSlug(e.target.value)}
                     placeholder="handloom-cotton-kurta"
-                    className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 font-mono text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                    className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 font-mono text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
 
@@ -478,7 +478,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                     value={sku}
                     onChange={(e) => setSku(e.target.value)}
                     placeholder="TG-HLK-BASE"
-                    className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 font-mono text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                    className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 font-mono text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -490,7 +490,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                   value={shortDescription}
                   onChange={(e) => setShortDescription(e.target.value)}
                   placeholder="Brief 1-sentence summary"
-                  className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -501,7 +501,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   placeholder="Detailed material, weave, wash care, and sizing notes..."
-                  className="mt-1 w-full rounded border border-thaagai-line p-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="mt-1 w-full rounded border border-thaagai-line bg-white p-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -513,7 +513,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                     value={fabricCare}
                     onChange={(e) => setFabricCare(e.target.value)}
                     placeholder="Dry clean only / Pure handloom cotton wash cold"
-                    className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                    className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
                 <div>
@@ -523,7 +523,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                     value={shippingInfo}
                     onChange={(e) => setShippingInfo(e.target.value)}
                     placeholder="Dispatches in 2 days / Bespoke tailoring 7-10 days"
-                    className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                    className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -548,7 +548,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                   value={basePrice}
                   onChange={(e) => setBasePrice(e.target.value)}
                   placeholder="1890.00"
-                  className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs font-bold focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 text-xs font-bold text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -561,7 +561,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                   value={salePrice}
                   onChange={(e) => setSalePrice(e.target.value)}
                   placeholder="Leave empty if regular price"
-                  className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs font-semibold text-rose-700 focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark dark:text-rose-400"
+                  className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 text-xs font-semibold text-rose-700 placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-rose-400 dark:placeholder:text-stone-500"
                 />
               </div>
             </div>
@@ -639,7 +639,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                           value={v.sku}
                           onChange={(e) => updateVariantRow(idx, "sku", e.target.value)}
                           placeholder="TG-VAR-1"
-                          className="h-8 w-28 rounded border border-thaagai-line px-2 font-mono text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                          className="h-8 w-28 rounded border border-thaagai-line bg-white px-2 font-mono text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                         />
                       </td>
                       <td className="p-2">
@@ -649,7 +649,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                           value={v.size}
                           onChange={(e) => updateVariantRow(idx, "size", e.target.value.toUpperCase())}
                           placeholder="e.g. M"
-                          className="h-8 w-20 rounded border border-thaagai-line px-2 text-xs font-bold focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                          className="h-8 w-20 rounded border border-thaagai-line bg-white px-2 text-xs font-bold text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                         />
                       </td>
                       <td className="p-2">
@@ -658,7 +658,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                           value={v.colour}
                           onChange={(e) => updateVariantRow(idx, "colour", e.target.value)}
                           placeholder="Maroon"
-                          className="h-8 w-24 rounded border border-thaagai-line px-2 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                          className="h-8 w-24 rounded border border-thaagai-line bg-white px-2 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                         />
                       </td>
                       <td className="p-2">
@@ -668,7 +668,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                           required
                           value={v.stockQuantity}
                           onChange={(e) => updateVariantRow(idx, "stockQuantity", Number(e.target.value))}
-                          className="h-8 w-16 rounded border border-thaagai-line px-2 text-xs font-bold focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                          className="h-8 w-16 rounded border border-thaagai-line bg-white px-2 text-xs font-bold text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                         />
                       </td>
                       <td className="p-2">
@@ -678,7 +678,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                           value={v.priceOverride}
                           onChange={(e) => updateVariantRow(idx, "priceOverride", e.target.value)}
                           placeholder="Base"
-                          className="h-8 w-20 rounded border border-thaagai-line px-2 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                          className="h-8 w-20 rounded border border-thaagai-line bg-white px-2 text-xs font-semibold text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                         />
                       </td>
                       <td className="p-2 text-center">
@@ -754,7 +754,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                           );
                         }}
                         placeholder="Alt text (mandatory)"
-                        className="h-7 w-full rounded border border-thaagai-line px-2 text-[11px] focus:outline-none focus:border-thaagai-wine dark:bg-thaagai-cardDark"
+                        className="h-7 w-full rounded border border-thaagai-line bg-white px-2 text-[11px] text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                       />
 
                       <div className="flex items-center justify-between pt-1">
@@ -797,7 +797,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                 <select
                   value={status}
                   onChange={(e) => setStatus(e.target.value as any)}
-                  className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs font-semibold focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 text-xs font-semibold text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                 >
                   <option value="DRAFT">Draft</option>
                   <option value="ACTIVE">Active (Live on store)</option>
@@ -810,7 +810,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                 <select
                   value={productType}
                   onChange={(e) => setProductType(e.target.value as any)}
-                  className="mt-1 h-10 w-full rounded border border-thaagai-line px-3 text-xs font-semibold focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="mt-1 h-10 w-full rounded border border-thaagai-line bg-white px-3 text-xs font-semibold text-thaagai-ink focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
                 >
                   <option value="READY_TO_WEAR">Ready-to-Wear (Standard Sizes & Stock)</option>
                   <option value="CUSTOM_MADE">Custom-Made (Bespoke Tailoring Atelier)</option>
@@ -868,7 +868,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                   value={seoTitle}
                   onChange={(e) => setSeoTitle(e.target.value)}
                   placeholder="Defaults to product name | Thaagai"
-                  className="mt-1 h-9 w-full rounded border border-thaagai-line px-2 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="mt-1 h-9 w-full rounded border border-thaagai-line bg-white px-2 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -879,7 +879,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                   value={seoDescription}
                   onChange={(e) => setSeoDescription(e.target.value)}
                   placeholder="Defaults to short description"
-                  className="mt-1 w-full rounded border border-thaagai-line p-2 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="mt-1 w-full rounded border border-thaagai-line bg-white p-2 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 
@@ -890,7 +890,7 @@ export function ProductEditor({ productId }: ProductEditorProps) {
                   value={canonicalUrl}
                   onChange={(e) => setCanonicalUrl(e.target.value)}
                   placeholder="https://thaagai.com/product/..."
-                  className="mt-1 h-9 w-full rounded border border-thaagai-line px-2 text-xs focus:border-thaagai-wine focus:outline-none dark:bg-thaagai-cardDark"
+                  className="mt-1 h-9 w-full rounded border border-thaagai-line bg-white px-2 text-xs text-thaagai-ink placeholder:text-stone-400 focus:border-thaagai-wine focus:outline-none dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                 />
               </div>
 

@@ -269,7 +269,7 @@ export function SizeToLengthPreview({
           <select
             value={selectedHeight}
             onChange={(e) => setSelectedHeight(e.target.value)}
-            className="w-full h-9 rounded-lg border border-stone-300 bg-white px-3 text-xs text-stone-900 font-medium focus:border-stone-900 focus:outline-none"
+            className="w-full h-9 rounded-lg border border-stone-300 bg-white px-3 text-xs text-stone-900 font-medium focus:border-stone-900 focus:outline-none dark:border-stone-700 dark:bg-stone-800 dark:text-stone-100"
           >
             {HEIGHT_BRACKETS.map((h) => (
               <option key={h.id} value={h.id}>

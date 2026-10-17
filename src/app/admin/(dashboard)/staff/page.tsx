@@ -227,7 +227,7 @@ export default function AdminStaffPage() {
                     placeholder="e.g. Priyadharshini K."
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="h-10 w-full rounded-lg border border-thaagai-line bg-white pl-9 pr-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="h-10 w-full rounded-lg border border-thaagai-line bg-white pl-9 pr-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -244,7 +244,7 @@ export default function AdminStaffPage() {
                     placeholder="e.g. staff@thaagai.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="h-10 w-full rounded-lg border border-thaagai-line bg-white pl-9 pr-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="h-10 w-full rounded-lg border border-thaagai-line bg-white pl-9 pr-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
@@ -262,7 +262,7 @@ export default function AdminStaffPage() {
                     placeholder="Minimum 8 characters"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="h-10 w-full rounded-lg border border-thaagai-line bg-white pl-9 pr-3 text-xs text-thaagai-ink outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
+                    className="h-10 w-full rounded-lg border border-thaagai-line bg-white pl-9 pr-3 text-xs text-thaagai-ink placeholder:text-stone-400 outline-none focus:border-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white dark:placeholder:text-stone-500"
                   />
                 </div>
               </div>
