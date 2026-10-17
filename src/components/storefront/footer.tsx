@@ -188,6 +188,14 @@ export function Footer({ categories = [], storeProfile }: FooterProps) {
             <ul className="mt-4 space-y-2.5 text-xs">
               <li>
                 <Link
+                  href="/about"
+                  className="font-medium text-thaagai-ink transition-colors hover:text-thaagai-wine hover:underline dark:text-white"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/contact"
                   className="text-thaagai-ink/80 transition-colors hover:text-thaagai-wine hover:underline dark:text-thaagai-inkDark/80"
                 >

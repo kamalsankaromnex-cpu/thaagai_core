@@ -214,6 +214,7 @@ describe("Global Footer Specifications", () => {
     ];
 
     const customerCareRoutes = [
+      { label: "About Us", href: "/about" },
       { label: "Contact Us", href: "/contact" },
       { label: "Shipping Policy", href: "/shipping-policy" },
       { label: "Returns & Refunds", href: "/return-refund-policy" },

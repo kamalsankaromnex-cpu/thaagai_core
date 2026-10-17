@@ -428,14 +428,6 @@ export function Navbar({ categories: initialCategories = [], tagline }: NavbarPr
               <ChevronRight className="h-4 w-4 text-thaagai-ink/30" />
             </Link>
             <Link
-              href="/about"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex h-11 items-center justify-between text-sm font-medium text-thaagai-ink hover:text-thaagai-wine dark:text-thaagai-inkDark"
-            >
-              <span>About Us</span>
-              <ChevronRight className="h-4 w-4 text-thaagai-ink/30" />
-            </Link>
-            <Link
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
               className="flex h-11 items-center justify-between text-sm font-medium text-thaagai-ink hover:text-thaagai-wine dark:text-thaagai-inkDark"
