@@ -261,37 +261,37 @@ Could your master tailor confirm fabric stock and pattern cut?`;
             <button
               type="button"
               onClick={() => setActiveTab("fabric")}
-              className={`flex items-center justify-center gap-1.5 rounded-lg py-2 transition ${
+              className={`tap-bounce flex items-center justify-center gap-1.5 rounded-lg py-2 transition-all duration-200 active:scale-95 ${
                 activeTab === "fabric"
-                  ? "bg-white text-stone-900 shadow-xs"
-                  : "hover:text-stone-900"
+                  ? "bg-white text-stone-900 shadow-xs scale-[1.02]"
+                  : "hover:text-stone-900 hover:bg-white/50"
               }`}
             >
-              <Layers className="h-3.5 w-3.5" />
+              <Layers className="h-3.5 w-3.5 transition-transform group-hover:scale-110" />
               <span>1. Fabric</span>
             </button>
             <button
               type="button"
               onClick={() => setActiveTab("styling")}
-              className={`flex items-center justify-center gap-1.5 rounded-lg py-2 transition ${
+              className={`tap-bounce flex items-center justify-center gap-1.5 rounded-lg py-2 transition-all duration-200 active:scale-95 ${
                 activeTab === "styling"
-                  ? "bg-white text-stone-900 shadow-xs"
-                  : "hover:text-stone-900"
+                  ? "bg-white text-stone-900 shadow-xs scale-[1.02]"
+                  : "hover:text-stone-900 hover:bg-white/50"
               }`}
             >
-              <Scissors className="h-3.5 w-3.5" />
+              <Scissors className="h-3.5 w-3.5 transition-transform group-hover:scale-110" />
               <span>2. Style</span>
             </button>
             <button
               type="button"
               onClick={() => setActiveTab("sizing")}
-              className={`flex items-center justify-center gap-1.5 rounded-lg py-2 transition ${
+              className={`tap-bounce flex items-center justify-center gap-1.5 rounded-lg py-2 transition-all duration-200 active:scale-95 ${
                 activeTab === "sizing"
-                  ? "bg-white text-stone-900 shadow-xs"
-                  : "hover:text-stone-900"
+                  ? "bg-white text-stone-900 shadow-xs scale-[1.02]"
+                  : "hover:text-stone-900 hover:bg-white/50"
               }`}
             >
-              <Ruler className="h-3.5 w-3.5" />
+              <Ruler className="h-3.5 w-3.5 transition-transform group-hover:scale-110" />
               <span>3. Sizing</span>
             </button>
           </div>
@@ -321,9 +321,9 @@ Could your master tailor confirm fabric stock and pattern cut?`;
                       key={f.id || f.fabricId}
                       type="button"
                       onClick={() => setSelectedFabric(f)}
-                      className={`w-full flex items-center gap-3.5 p-3 rounded-xl border text-left transition-all ${
+                      className={`tap-bounce w-full flex items-center gap-3.5 p-3 rounded-xl border text-left transition-all duration-200 hover:scale-[1.01] active:scale-[0.99] ${
                         isSelected
-                          ? "border-[#8A4A38] bg-[#FAF7F2] ring-2 ring-[#8A4A38]/20 shadow-xs"
+                          ? "border-[#8A4A38] bg-[#FAF7F2] ring-2 ring-[#8A4A38]/20 shadow-sm"
                           : "border-stone-200 bg-white hover:border-stone-300 hover:bg-stone-50/50"
                       }`}
                     >
@@ -334,11 +334,11 @@ Could your master tailor confirm fabric stock and pattern cut?`;
                           alt={f.name}
                           fill
                           sizes="56px"
-                          className="object-cover"
+                          className="object-cover transition-transform duration-300 group-hover:scale-105"
                         />
                         {isSelected && (
-                          <div className="absolute inset-0 bg-[#8A4A38]/20 flex items-center justify-center">
-                            <Check className="h-5 w-5 text-white stroke-[3] drop-shadow-xs" />
+                          <div className="absolute inset-0 bg-[#8A4A38]/30 flex items-center justify-center animate-scale-in backdrop-blur-[0.5px]">
+                            <Check className="h-5 w-5 text-white stroke-[3] drop-shadow-xs animate-bounce" />
                           </div>
                         )}
                       </div>
@@ -680,20 +680,20 @@ Could your master tailor confirm fabric stock and pattern cut?`;
               <button
                 type="button"
                 onClick={handleAddToBag}
-                className={`flex h-11 items-center justify-center gap-2 rounded-xl text-xs font-bold shadow-xs transition active:scale-95 ${
+                className={`shimmer-sweep tap-bounce flex h-11 items-center justify-center gap-2 rounded-xl text-xs font-bold shadow-md transition-all duration-200 hover:scale-[1.02] active:scale-95 ${
                   addedAnimation
-                    ? "bg-emerald-700 text-white"
-                    : "bg-[#8A4A38] text-white hover:bg-[#723B2C]"
+                    ? "bg-emerald-700 text-white animate-scale-in"
+                    : "bg-[#8A4A38] text-white hover:bg-[#723B2C] hover:shadow-lg"
                 }`}
               >
                 {addedAnimation ? (
                   <>
-                    <Check className="h-4 w-4 stroke-[3]" />
+                    <Check className="h-4 w-4 stroke-[3] animate-bounce" />
                     <span>Added to Bag!</span>
                   </>
                 ) : (
                   <>
-                    <ShoppingBag className="h-4 w-4" />
+                    <ShoppingBag className="h-4 w-4 transition-transform duration-200 group-hover:scale-110" />
                     <span>Add to Bag</span>
                   </>
                 )}
@@ -704,9 +704,9 @@ Could your master tailor confirm fabric stock and pattern cut?`;
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-11 items-center justify-center gap-2 rounded-xl bg-[#25D366] text-white text-xs font-bold shadow-xs transition hover:bg-[#20ba5a] active:scale-95"
+                className="shimmer-sweep tap-bounce flex h-11 items-center justify-center gap-2 rounded-xl bg-[#25D366] text-white text-xs font-bold shadow-md transition-all duration-200 hover:bg-[#20ba5a] hover:scale-[1.02] hover:shadow-lg active:scale-95"
               >
-                <MessageSquare className="h-4 w-4 fill-white" />
+                <MessageSquare className="h-4 w-4 fill-white transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-6" />
                 <span>Book via WhatsApp</span>
               </a>
             </div>

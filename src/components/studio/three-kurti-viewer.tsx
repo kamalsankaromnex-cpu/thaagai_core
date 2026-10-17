@@ -800,20 +800,20 @@ export function ThreeKurtiViewer({
       </div>
 
       {/* Bottom Center: Drag Hint */}
-      <div className="pointer-events-none absolute bottom-3 sm:bottom-4 inset-x-0 z-10 flex justify-center">
-        <span className="rounded-full bg-stone-900/60 px-3.5 py-1 text-[11px] font-medium text-white/90 backdrop-blur-md shadow-xs">
+      <div className="pointer-events-none absolute bottom-3 sm:bottom-4 inset-x-0 z-10 flex justify-center animate-float">
+        <span className="rounded-full bg-stone-900/75 px-4 py-1.5 text-[11px] font-medium text-white/95 backdrop-blur-md shadow-md border border-white/10 animate-pulse">
           Drag to rotate 360° • Pinch to zoom weave
         </span>
       </div>
 
       {/* Bottom Left Camera Presets Bar */}
-      <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 z-10 flex items-center gap-1 rounded-xl bg-white/95 p-1 shadow-sm backdrop-blur-md border border-stone-200/80 text-[11px] font-semibold text-stone-700">
+      <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 z-10 flex items-center gap-1 rounded-xl bg-white/95 p-1 shadow-md backdrop-blur-md border border-stone-200/80 text-[11px] font-semibold text-stone-700 animate-scale-in">
         <button
           type="button"
           onClick={() => handleSelectPreset("FULL")}
-          className={`rounded-lg px-2.5 py-1 transition ${
+          className={`tap-bounce rounded-lg px-2.5 py-1 transition-all duration-200 active:scale-95 ${
             activePreset === "FULL"
-              ? "bg-[#8A4A38] text-white shadow-2xs"
+              ? "bg-[#8A4A38] text-white shadow-2xs scale-[1.02]"
               : "hover:bg-stone-100 text-stone-700"
           }`}
         >
@@ -822,9 +822,9 @@ export function ThreeKurtiViewer({
         <button
           type="button"
           onClick={() => handleSelectPreset("NECK")}
-          className={`rounded-lg px-2.5 py-1 transition ${
+          className={`tap-bounce rounded-lg px-2.5 py-1 transition-all duration-200 active:scale-95 ${
             activePreset === "NECK"
-              ? "bg-[#8A4A38] text-white shadow-2xs"
+              ? "bg-[#8A4A38] text-white shadow-2xs scale-[1.02]"
               : "hover:bg-stone-100 text-stone-700"
           }`}
         >
@@ -833,9 +833,9 @@ export function ThreeKurtiViewer({
         <button
           type="button"
           onClick={() => handleSelectPreset("BORDER")}
-          className={`rounded-lg px-2.5 py-1 transition ${
+          className={`tap-bounce rounded-lg px-2.5 py-1 transition-all duration-200 active:scale-95 ${
             activePreset === "BORDER"
-              ? "bg-[#8A4A38] text-white shadow-2xs"
+              ? "bg-[#8A4A38] text-white shadow-2xs scale-[1.02]"
               : "hover:bg-stone-100 text-stone-700"
           }`}
         >
@@ -844,9 +844,9 @@ export function ThreeKurtiViewer({
         <button
           type="button"
           onClick={() => handleSelectPreset("BACK")}
-          className={`rounded-lg px-2.5 py-1 transition ${
+          className={`tap-bounce rounded-lg px-2.5 py-1 transition-all duration-200 active:scale-95 ${
             activePreset === "BACK"
-              ? "bg-[#8A4A38] text-white shadow-2xs"
+              ? "bg-[#8A4A38] text-white shadow-2xs scale-[1.02]"
               : "hover:bg-stone-100 text-stone-700"
           }`}
         >
@@ -855,20 +855,20 @@ export function ThreeKurtiViewer({
       </div>
 
       {/* Right Floating Quick Tools */}
-      <div className="absolute right-3 top-3 sm:right-4 sm:top-4 z-10 flex flex-col gap-2">
+      <div className="absolute right-3 top-3 sm:right-4 sm:top-4 z-10 flex flex-col gap-2 animate-scale-in">
         {/* Auto Rotate Toggle */}
         <button
           type="button"
           onClick={() => setIsRotating((prev) => !prev)}
           title={isRotating ? "Pause rotation" : "Auto rotate"}
           aria-label="Toggle auto rotation"
-          className={`flex h-9 w-9 items-center justify-center rounded-lg shadow-sm backdrop-blur-md border transition active:scale-95 ${
+          className={`tap-bounce flex h-9 w-9 items-center justify-center rounded-lg shadow-sm backdrop-blur-md border transition-all duration-200 hover:scale-105 active:scale-95 ${
             isRotating
-              ? "bg-[#8A4A38] text-white border-[#8A4A38]"
+              ? "bg-[#8A4A38] text-white border-[#8A4A38] shadow-md"
               : "bg-white/90 text-stone-700 hover:text-stone-900 border-stone-200"
           }`}
         >
-          <RotateCw className={`h-4 w-4 ${isRotating ? "animate-spin" : ""}`} />
+          <RotateCw className={`h-4 w-4 transition-transform ${isRotating ? "animate-spin" : ""}`} />
         </button>
 
         {/* Zoom In */}
@@ -877,7 +877,7 @@ export function ThreeKurtiViewer({
           onClick={() => handleZoom("in")}
           title="Zoom In"
           aria-label="Zoom in"
-          className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/90 text-stone-700 hover:text-stone-900 border border-stone-200 shadow-sm backdrop-blur-md active:scale-95"
+          className="tap-bounce flex h-9 w-9 items-center justify-center rounded-lg bg-white/90 text-stone-700 hover:text-stone-900 border border-stone-200 shadow-sm backdrop-blur-md hover:scale-105 active:scale-95 transition-all duration-200"
         >
           <ZoomIn className="h-4 w-4" />
         </button>
@@ -888,7 +888,7 @@ export function ThreeKurtiViewer({
           onClick={() => handleZoom("out")}
           title="Zoom Out"
           aria-label="Zoom out"
-          className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/90 text-stone-700 hover:text-stone-900 border border-stone-200 shadow-sm backdrop-blur-md active:scale-95"
+          className="tap-bounce flex h-9 w-9 items-center justify-center rounded-lg bg-white/90 text-stone-700 hover:text-stone-900 border border-stone-200 shadow-sm backdrop-blur-md hover:scale-105 active:scale-95 transition-all duration-200"
         >
           <ZoomOut className="h-4 w-4" />
         </button>
@@ -899,7 +899,7 @@ export function ThreeKurtiViewer({
           onClick={handleResetCamera}
           title="Reset View"
           aria-label="Reset 3D camera view"
-          className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/90 text-stone-700 hover:text-stone-900 border border-stone-200 shadow-sm backdrop-blur-md active:scale-95"
+          className="tap-bounce flex h-9 w-9 items-center justify-center rounded-lg bg-white/90 text-stone-700 hover:text-stone-900 border border-stone-200 shadow-sm backdrop-blur-md hover:scale-105 active:scale-95 transition-all duration-200"
         >
           <Maximize2 className="h-4 w-4" />
         </button>

@@ -26,7 +26,7 @@ export function SizeGuideModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/60 p-4 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-thaagai-line bg-white p-6 shadow-2xl dark:border-thaagai-line/30 dark:bg-thaagai-cardDark sm:p-8">
+      <div className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-thaagai-line bg-white p-6 shadow-2xl dark:border-thaagai-line/30 dark:bg-thaagai-cardDark sm:p-8 animate-scale-in">
         {/* Header */}
         <div className="flex items-start justify-between border-b border-thaagai-line/60 pb-4">
           <div className="space-y-1">
@@ -43,7 +43,7 @@ export function SizeGuideModal({
           <button
             onClick={onClose}
             aria-label="Close size guide"
-            className="rounded-full p-2 text-thaagai-ink/60 transition-colors hover:bg-thaagai-sand/60 hover:text-thaagai-ink dark:text-thaagai-inkDark"
+            className="rounded-full p-2 text-thaagai-ink/60 transition-transform tap-bounce hover:bg-thaagai-sand/60 hover:text-thaagai-ink dark:text-thaagai-inkDark active:scale-90"
           >
             <X className="h-5 w-5" />
           </button>
@@ -55,7 +55,7 @@ export function SizeGuideModal({
             <button
               type="button"
               onClick={() => setActiveTab("CHART")}
-              className={`rounded-lg px-3.5 py-1.5 text-xs font-semibold transition-all ${
+              className={`rounded-lg px-3.5 py-1.5 text-xs font-semibold transition-all tap-bounce active:scale-95 ${
                 activeTab === "CHART"
                   ? "bg-thaagai-wine text-white shadow-xs"
                   : "bg-thaagai-sand/40 text-thaagai-ink hover:bg-thaagai-sand dark:text-thaagai-inkDark"
@@ -66,7 +66,7 @@ export function SizeGuideModal({
             <button
               type="button"
               onClick={() => setActiveTab("HOW_TO_MEASURE")}
-              className={`rounded-lg px-3.5 py-1.5 text-xs font-semibold transition-all ${
+              className={`rounded-lg px-3.5 py-1.5 text-xs font-semibold transition-all tap-bounce active:scale-95 ${
                 activeTab === "HOW_TO_MEASURE"
                   ? "bg-thaagai-wine text-white shadow-xs"
                   : "bg-thaagai-sand/40 text-thaagai-ink hover:bg-thaagai-sand dark:text-thaagai-inkDark"
@@ -77,7 +77,7 @@ export function SizeGuideModal({
             <button
               type="button"
               onClick={() => setActiveTab("CUSTOM_FIT")}
-              className={`rounded-lg px-3.5 py-1.5 text-xs font-semibold transition-all ${
+              className={`rounded-lg px-3.5 py-1.5 text-xs font-semibold transition-all tap-bounce active:scale-95 ${
                 activeTab === "CUSTOM_FIT"
                   ? "bg-thaagai-wine text-white shadow-xs"
                   : "bg-thaagai-sand/40 text-thaagai-ink hover:bg-thaagai-sand dark:text-thaagai-inkDark"
@@ -93,7 +93,7 @@ export function SizeGuideModal({
               <button
                 type="button"
                 onClick={() => setUnit("INCH")}
-                className={`rounded-md px-3 py-1 text-xs font-bold transition-all ${
+                className={`rounded-md px-3 py-1 text-xs font-bold transition-all tap-bounce active:scale-95 ${
                   unit === "INCH"
                     ? "bg-white text-thaagai-wine shadow-xs dark:bg-thaagai-cardDark dark:text-white"
                     : "text-thaagai-ink/70 hover:text-thaagai-ink dark:text-thaagai-inkDark"
@@ -104,13 +104,13 @@ export function SizeGuideModal({
               <button
                 type="button"
                 onClick={() => setUnit("CM")}
-                className={`rounded-md px-3 py-1 text-xs font-bold transition-all ${
+                className={`rounded-md px-3 py-1 text-xs font-bold transition-all tap-bounce active:scale-95 ${
                   unit === "CM"
                     ? "bg-white text-thaagai-wine shadow-xs dark:bg-thaagai-cardDark dark:text-white"
                     : "text-thaagai-ink/70 hover:text-thaagai-ink dark:text-thaagai-inkDark"
                 }`}
               >
-                Centimetres (cm)
+                Centimeters (cm)
               </button>
             </div>
           )}

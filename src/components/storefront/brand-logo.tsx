@@ -118,7 +118,7 @@ export function BrandLogo({
   // Render separate mode: Standalone Icon (Mannequin Needle) + Standalone Wordmark (Embroidered Thaagai)
   const content = (
     <div
-      className={`flex items-center transition-opacity hover:opacity-90 ${
+      className={`group/logo flex items-center transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] tap-bounce ${
         layout === "stacked"
           ? "flex-col items-center gap-1.5"
           : "flex-row items-center gap-2 sm:gap-2.5"
@@ -126,7 +126,7 @@ export function BrandLogo({
     >
       {/* 1. Standalone Emblem / Logo Icon */}
       {showIcon && (
-        <div className="flex items-center justify-center shrink-0">
+        <div className="flex items-center justify-center shrink-0 transition-transform duration-300 group-hover/logo:scale-105 group-hover/logo:rotate-1">
           {!iconError ? (
             <Image
               src={iconSrc}

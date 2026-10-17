@@ -235,20 +235,20 @@ export function Navbar({ categories: initialCategories = [], tagline }: NavbarPr
             <Link
               href={isAuthenticated ? "/account" : "/login"}
               aria-label={isAuthenticated ? (customer?.fullName ? `Account: ${customer.fullName}` : "Customer Account") : "Sign in / Register"}
-              className="flex h-11 w-11 min-w-[44px] items-center justify-center rounded-full text-thaagai-ink transition-colors hover:bg-thaagai-sand/60 hover:text-thaagai-wine focus-visible:outline dark:text-thaagai-inkDark"
+              className="flex h-11 w-11 min-w-[44px] items-center justify-center rounded-full text-thaagai-ink transition-all duration-200 hover:scale-105 hover:bg-thaagai-sand/60 hover:text-thaagai-wine active:scale-95 tap-bounce focus-visible:outline dark:text-thaagai-inkDark"
             >
-              <User className="h-5 w-5" />
+              <User className="h-5 w-5 transition-transform duration-200 hover:scale-105" />
             </Link>
 
             {/* Wishlist Icon */}
             <Link
               href="/wishlist"
               aria-label={`Wishlist with ${wishlistCount} item${wishlistCount === 1 ? "" : "s"}`}
-              className="relative flex h-11 w-11 min-w-[44px] items-center justify-center rounded-full text-thaagai-ink transition-colors hover:bg-thaagai-sand/60 hover:text-thaagai-wine focus-visible:outline dark:text-thaagai-inkDark"
+              className="group relative flex h-11 w-11 min-w-[44px] items-center justify-center rounded-full text-thaagai-ink transition-all duration-200 hover:scale-105 hover:bg-thaagai-sand/60 hover:text-thaagai-wine active:scale-95 tap-bounce focus-visible:outline dark:text-thaagai-inkDark"
             >
-              <Heart className="h-5 w-5" />
+              <Heart className="h-5 w-5 transition-transform duration-200 group-hover:scale-110 group-hover:text-rose-600" />
               {wishlistCount > 0 && (
-                <span className="absolute -top-0.5 -right-0.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-rose-600 px-1 text-[10px] font-bold text-white shadow-xs">
+                <span className="absolute -top-0.5 -right-0.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-rose-600 px-1 text-[10px] font-bold text-white shadow-xs animate-scale-in">
                   {wishlistCount}
                 </span>
               )}
@@ -258,10 +258,10 @@ export function Navbar({ categories: initialCategories = [], tagline }: NavbarPr
             <Link
               href="/cart"
               aria-label={`Shopping Bag with ${itemCount} item${itemCount === 1 ? "" : "s"}`}
-              className="relative flex h-11 w-11 min-w-[44px] items-center justify-center rounded-full text-thaagai-ink transition-colors hover:bg-thaagai-sand/60 hover:text-thaagai-wine focus-visible:outline dark:text-thaagai-inkDark"
+              className="group relative flex h-11 w-11 min-w-[44px] items-center justify-center rounded-full text-thaagai-ink transition-all duration-200 hover:scale-105 hover:bg-thaagai-sand/60 hover:text-thaagai-wine active:scale-95 tap-bounce focus-visible:outline dark:text-thaagai-inkDark"
             >
-              <ShoppingBag className="h-5 w-5" />
-              <span className="absolute -top-0.5 -right-0.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-[#9E7345] px-1 text-[10px] font-bold text-white shadow-xs">
+              <ShoppingBag className="h-5 w-5 transition-transform duration-200 group-hover:scale-110" />
+              <span className={`absolute -top-0.5 -right-0.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-[#9E7345] px-1 text-[10px] font-bold text-white shadow-xs ${itemCount > 0 ? "animate-scale-in" : ""}`}>
                 {itemCount}
               </span>
             </Link>
@@ -309,15 +309,17 @@ export function Navbar({ categories: initialCategories = [], tagline }: NavbarPr
                 <li key={item.id} className="flex items-center gap-4 sm:gap-7 lg:gap-9">
                   <Link
                     href={item.href}
-                    className={`relative text-xs sm:text-[13px] font-semibold uppercase tracking-[0.15em] transition-colors hover:text-[#DA9F63] ${
+                    className={`group relative py-1 text-xs sm:text-[13px] font-semibold uppercase tracking-[0.15em] transition-all duration-300 hover:text-[#DA9F63] active:scale-95 tap-bounce ${
                       item.isActive
                         ? "text-white font-bold"
                         : "text-[#FAF7F2]/90 hover:text-[#DA9F63]"
                     }`}
                   >
-                    <span>{item.name}</span>
-                    {item.isActive && (
-                      <span className="absolute -bottom-1.5 left-0 right-0 h-0.5 rounded-full bg-[#DA9F63]" />
+                    <span className="transition-transform duration-200 group-hover:-translate-y-0.5 inline-block">{item.name}</span>
+                    {item.isActive ? (
+                      <span className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full bg-[#DA9F63] shadow-[0_0_8px_rgba(218,159,99,0.5)] animate-scale-in" />
+                    ) : (
+                      <span className="absolute -bottom-1 left-1/2 h-0.5 w-0 -translate-x-1/2 rounded-full bg-[#DA9F63] transition-all duration-300 group-hover:w-full" />
                     )}
                   </Link>
 

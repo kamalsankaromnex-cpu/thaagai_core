@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useWishlist, WishlistItem } from "@/context/wishlist-context";
 import { Heart } from "lucide-react";
@@ -40,15 +40,21 @@ export function WishlistButton({ item, className = "", size = "md" }: WishlistBu
       type="button"
       onClick={handleClick}
       aria-label={wishlisted ? `Remove ${item.name} from wishlist` : `Add ${item.name} to wishlist`}
-      className={`group relative flex items-center justify-center rounded-full transition-all ${sizeClasses} ${
+      className={`group relative flex items-center justify-center rounded-full transition-all duration-300 tap-bounce hover:scale-110 active:scale-90 ${sizeClasses} ${
         wishlisted
           ? "bg-rose-50 text-rose-600 shadow-sm dark:bg-rose-950/60 dark:text-rose-400"
           : "bg-white/90 text-thaagai-ink/70 hover:bg-white hover:text-thaagai-wine shadow-sm backdrop-blur-xs dark:bg-thaagai-cardDark/90 dark:text-white/80 dark:hover:text-thaagai-gold"
-      } ${bouncing ? "scale-110" : "scale-100"} ${className}`}
+      } ${bouncing ? "animate-heart-pop" : ""} ${className}`}
     >
+      {/* Delicate floating burst halo on wishlist click */}
+      {bouncing && (
+        <span className="absolute -inset-1.5 rounded-full bg-rose-400/30 animate-ping pointer-events-none" />
+      )}
       <Heart
-        className={`${iconSizes} transition-colors ${
-          wishlisted ? "fill-rose-600 dark:fill-rose-400 text-rose-600 dark:text-rose-400" : "group-hover:stroke-thaagai-wine"
+        className={`${iconSizes} transition-transform duration-300 group-hover:scale-110 ${
+          wishlisted
+            ? "fill-rose-600 dark:fill-rose-400 text-rose-600 dark:text-rose-400"
+            : "group-hover:stroke-thaagai-wine"
         }`}
       />
     </button>

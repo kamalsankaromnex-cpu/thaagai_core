@@ -123,7 +123,7 @@ export function PincodeDeliveryChecker({
           type="button"
           onClick={() => checkPincode()}
           disabled={loading || pinCode.length !== 6}
-          className="h-10 rounded-lg bg-thaagai-wine px-4 text-xs font-semibold text-white transition-all hover:bg-thaagai-wineHover disabled:opacity-50"
+          className="shimmer-sweep tap-bounce h-10 rounded-lg bg-thaagai-wine px-4 text-xs font-semibold text-white transition-all duration-200 hover:bg-thaagai-wineHover hover:scale-105 active:scale-95 disabled:opacity-50"
         >
           {loading ? "Checking..." : "Check PIN"}
         </button>
@@ -131,7 +131,7 @@ export function PincodeDeliveryChecker({
 
       {/* Error state */}
       {error && (
-        <div className="mt-2.5 flex items-center gap-1.5 text-xs text-red-600 dark:text-red-400">
+        <div className="mt-2.5 flex items-center gap-1.5 text-xs text-red-600 dark:text-red-400 animate-slide-down">
           <AlertCircle className="h-3.5 w-3.5 shrink-0" />
           <span>{error}</span>
         </div>
@@ -139,10 +139,10 @@ export function PincodeDeliveryChecker({
 
       {/* Success / Serviceable state */}
       {estimate && !error && (
-        <div className="mt-3 space-y-2 border-t border-thaagai-line/60 pt-3 text-xs animate-in fade-in duration-200">
+        <div className="mt-3 space-y-2 border-t border-thaagai-line/60 pt-3 text-xs animate-scale-in">
           <div className="flex items-center justify-between">
             <span className="flex items-center gap-1.5 font-bold text-emerald-700 dark:text-emerald-400">
-              <CheckCircle2 className="h-4 w-4 shrink-0" />
+              <CheckCircle2 className="h-4 w-4 shrink-0 animate-bounce" />
               <span>Serviceable via Speed Post & Air Express</span>
             </span>
             <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
@@ -151,7 +151,7 @@ export function PincodeDeliveryChecker({
           </div>
 
           {currentEstimate && (
-            <div className="rounded-xl border border-thaagai-gold/40 bg-white p-3 text-xs dark:bg-thaagai-cardDark">
+            <div className="rounded-xl border border-thaagai-gold/40 bg-white p-3 text-xs dark:bg-thaagai-cardDark shadow-xs transition-all duration-300 hover:shadow-sm">
               <div className="flex items-center gap-1.5 font-semibold text-thaagai-wine dark:text-thaagai-gold">
                 <Clock className="h-3.5 w-3.5 text-thaagai-gold" />
                 <span>Estimated Delivery: {currentEstimate.deliveryDateRange}</span>

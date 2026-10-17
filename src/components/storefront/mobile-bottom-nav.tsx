@@ -126,7 +126,7 @@ export function MobileBottomNav() {
               href={item.href}
               aria-label={item.ariaLabel}
               aria-current={item.isActive ? "page" : undefined}
-              className={`relative flex flex-1 flex-col items-center justify-center py-1 transition-all active:scale-95 ${
+              className={`tap-bounce group relative flex flex-1 flex-col items-center justify-center py-1 transition-all duration-200 active:scale-90 ${
                 item.isActive
                   ? "text-[#8A4A38] dark:text-amber-400 font-bold"
                   : "text-stone-500 hover:text-stone-800 dark:text-stone-400 dark:hover:text-stone-200 font-medium"
@@ -134,26 +134,26 @@ export function MobileBottomNav() {
             >
               <div className="relative">
                 <Icon
-                  className={`h-5 w-5 transition-transform ${
+                  className={`h-5 w-5 transition-transform duration-200 group-hover:scale-115 ${
                     item.isActive ? "scale-110 stroke-[2.4]" : "stroke-[1.8]"
                   }`}
                 />
                 {item.badge !== null && item.badge !== undefined && (
                   <span
                     aria-hidden="true"
-                    className="absolute -top-1.5 -right-2.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-[#8A4A38] px-1 text-[10px] font-bold text-white shadow-xs dark:bg-amber-600"
+                    className="absolute -top-1.5 -right-2.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-[#8A4A38] px-1 text-[10px] font-bold text-white shadow-xs dark:bg-amber-600 animate-scale-in"
                   >
                     {item.badge}
                   </span>
                 )}
               </div>
-              <span className="mt-1 text-[10px] tracking-tight leading-none">
+              <span className="mt-1 text-[10px] tracking-tight leading-none transition-colors">
                 {item.name}
               </span>
               {item.isActive && (
                 <span
                   aria-hidden="true"
-                  className="mt-0.5 h-1 w-1 rounded-full bg-[#8A4A38] dark:bg-amber-400"
+                  className="mt-0.5 h-1 w-1 rounded-full bg-[#8A4A38] dark:bg-amber-400 animate-scale-in"
                 />
               )}
             </Link>

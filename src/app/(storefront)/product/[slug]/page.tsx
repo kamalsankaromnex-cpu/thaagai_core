@@ -249,15 +249,24 @@ export default async function ProductPage({ params }: ProductPageProps) {
   }
 
   const formattedProduct = {
-    ...product,
+    id: product.id,
+    name: product.name,
+    slug: product.slug,
     description: product.description || "",
+    shortDescription: product.shortDescription || null,
     department: product.productType || "READY_TO_WEAR",
-    productType: product.productType || "READY_TO_WEAR",
+    productType: (product.productType || "READY_TO_WEAR") as "READY_TO_WEAR" | "CUSTOM_MADE",
     basePrice: Number(product.basePrice),
     salePrice: product.salePrice ? Number(product.salePrice) : null,
-    category: product.categories?.[0]?.category || null,
+    sku: product.sku || null,
     fabricCare: product.fabricCare || null,
     shippingInfo: product.shippingInfo || null,
+    category: product.categories?.[0]?.category
+      ? {
+          name: product.categories[0].category.name,
+          slug: product.categories[0].category.slug,
+        }
+      : null,
     customizationGroups: (product.customizationGroups || []).map((g: any) => ({
       id: g.id,
       name: g.name,
@@ -267,7 +276,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         id: o.id,
         name: o.name,
         priceDelta: Number(o.priceDelta),
-        description: o.description,
+        description: o.description || null,
       })),
     })),
     images: product.images.map((img: any) => ({
@@ -279,9 +288,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
       isPrimary: img.isPrimary,
     })),
     variants: product.variants.map((v: any) => ({
-      ...v,
-      price: v.price ? Number(v.price) : null,
-      salePrice: v.salePrice ? Number(v.salePrice) : null,
+      id: v.id,
+      sku: v.sku,
+      size: v.size || null,
+      colour: v.colour || null,
+      price: v.priceOverride ? Number(v.priceOverride) : Number(product.basePrice),
+      salePrice: v.salePriceOverride
+        ? Number(v.salePriceOverride)
+        : product.salePrice
+        ? Number(product.salePrice)
+        : null,
+      stockQuantity: v.stockQuantity,
     })),
   };
 

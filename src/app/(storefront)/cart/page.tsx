@@ -25,7 +25,7 @@ export default function CartPage() {
         <div className="mt-8">
           <Link
             href="/shop"
-            className="inline-flex h-11 min-h-[44px] items-center gap-2 rounded-md bg-thaagai-wine px-6 text-xs font-semibold text-white shadow-sm transition-colors hover:bg-thaagai-wineHover"
+            className="inline-flex h-11 min-h-[44px] items-center gap-2 rounded-md bg-thaagai-wine px-6 text-xs font-semibold text-white shadow-sm transition-all shimmer-sweep tap-bounce hover:bg-thaagai-wineHover"
           >
             <span>Start Shopping</span>
             <ArrowRight className="h-4 w-4" />
@@ -94,7 +94,7 @@ export default function CartPage() {
                         type="button"
                         onClick={() => removeItem(item.variantId)}
                         aria-label={`Remove ${item.name} from bag`}
-                        className="flex h-8 w-8 items-center justify-center text-thaagai-ink/40 hover:text-rose-600"
+                        className="flex h-8 w-8 items-center justify-center text-thaagai-ink/40 transition-transform tap-bounce hover:text-rose-600 active:scale-90"
                       >
                         <Trash2 className="h-4 w-4" />
                       </button>
@@ -146,7 +146,7 @@ export default function CartPage() {
                         type="button"
                         onClick={() => updateQuantity(item.variantId, item.quantity - 1)}
                         aria-label="Decrease quantity"
-                        className="flex h-9 w-9 items-center justify-center text-thaagai-ink hover:text-thaagai-wine disabled:opacity-30"
+                        className="flex h-9 w-9 items-center justify-center text-thaagai-ink transition-transform tap-bounce hover:text-thaagai-wine active:scale-90 disabled:opacity-30"
                         disabled={item.quantity <= 1}
                       >
                         <Minus className="h-3 w-3" />
@@ -158,7 +158,7 @@ export default function CartPage() {
                         type="button"
                         onClick={() => updateQuantity(item.variantId, item.quantity + 1)}
                         aria-label="Increase quantity"
-                        className="flex h-9 w-9 items-center justify-center text-thaagai-ink hover:text-thaagai-wine disabled:opacity-30"
+                        className="flex h-9 w-9 items-center justify-center text-thaagai-ink transition-transform tap-bounce hover:text-thaagai-wine active:scale-90 disabled:opacity-30"
                         disabled={item.quantity >= item.maxStock}
                       >
                         <Plus className="h-3 w-3" />
@@ -216,7 +216,7 @@ export default function CartPage() {
 
             <Link
               href="/checkout"
-              className="mt-6 flex h-11 min-h-[44px] w-full items-center justify-center gap-2 rounded-md bg-thaagai-wine text-xs font-semibold text-white shadow-sm transition-colors hover:bg-thaagai-wineHover"
+              className="mt-6 flex h-11 min-h-[44px] w-full items-center justify-center gap-2 rounded-md bg-thaagai-wine text-xs font-semibold text-white shadow-sm transition-all shimmer-sweep tap-bounce hover:bg-thaagai-wineHover"
             >
               <span>Proceed to Checkout</span>
               <ArrowRight className="h-4 w-4" />
@@ -224,7 +224,7 @@ export default function CartPage() {
 
             <Link
               href="/shop"
-              className="mt-3 flex h-10 w-full items-center justify-center text-xs font-semibold text-thaagai-wine hover:underline"
+              className="mt-3 flex h-10 w-full items-center justify-center text-xs font-semibold text-thaagai-wine transition-transform tap-bounce hover:underline active:scale-95"
             >
               Continue Browsing
             </Link>

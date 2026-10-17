@@ -379,7 +379,7 @@ export default function CheckoutPage() {
                   return (
                     <label
                       key={addr.id}
-                      className={`flex cursor-pointer items-start gap-3 rounded-xl border p-4 transition-all ${
+                      className={`flex cursor-pointer items-start gap-3 rounded-xl border p-4 transition-all tap-bounce ${
                         isSelected
                           ? "border-thaagai-wine bg-thaagai-sand/10 ring-1 ring-thaagai-wine dark:bg-thaagai-cardDark"
                           : "border-thaagai-line bg-white hover:border-thaagai-wine/40 dark:border-thaagai-line/30 dark:bg-thaagai-cardDark"
@@ -740,7 +740,7 @@ export default function CheckoutPage() {
             <button
               type="submit"
               disabled={loading}
-              className="mt-6 flex h-12 min-h-[44px] w-full items-center justify-center gap-2 rounded-md bg-thaagai-wine text-xs font-semibold text-white shadow-sm transition-colors hover:bg-thaagai-wineHover disabled:opacity-50"
+              className="mt-6 flex h-12 min-h-[44px] w-full items-center justify-center gap-2 rounded-md bg-thaagai-wine text-xs font-semibold text-white shadow-sm transition-all shimmer-sweep tap-bounce hover:bg-thaagai-wineHover disabled:opacity-50"
             >
               <MessageSquare className="h-4 w-4" />
               <span>{loading ? "Submitting Request..." : "Request Order via WhatsApp"}</span>

@@ -230,7 +230,7 @@ export default async function CustomerDetailPage({ params }: CustomerDetailPageP
 
                   <div className="flex items-center gap-4">
                     <span className="text-xs text-thaagai-ink/60">
-                      {new Date(ord.createdAt).toLocaleDateString("en-IN", {
+                      {new Date(ord.createdAt).toLocaleString("en-IN", {
                         dateStyle: "medium",
                         timeStyle: "short",
                       })}

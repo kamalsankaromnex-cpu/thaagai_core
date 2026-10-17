@@ -3,6 +3,7 @@ import { Footer, StoreProfileConfig } from "@/components/storefront/footer";
 import { AnnouncementBar, AnnouncementBarConfig } from "@/components/storefront/announcement-bar";
 import { MobileBottomNav } from "@/components/storefront/mobile-bottom-nav";
 import { WhatsAppFloatingConcierge } from "@/components/storefront/whatsapp-floating-concierge";
+import { AiChatAssistant } from "@/components/storefront/ai-chat-assistant";
 import { CartProvider } from "@/context/cart-context";
 import { CustomerAuthProvider } from "@/context/customer-auth-context";
 import { WishlistProvider } from "@/context/wishlist-context";
@@ -80,6 +81,9 @@ export default async function StorefrontLayout({
 
             {/* Floating Boutique WhatsApp Concierge Button */}
             <WhatsAppFloatingConcierge whatsappNumber={storeProfile?.supportPhone} />
+
+            {/* Floating Thaagai AI Stylist & Customer Assistance Chatbot */}
+            <AiChatAssistant />
           </CartProvider>
         </WishlistProvider>
       </CurrencyProvider>

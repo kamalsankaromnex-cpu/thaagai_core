@@ -298,9 +298,9 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
 
         <Link
           href={`/shop?${new URLSearchParams({ ...(typeFilter ? { type: typeFilter } : {}), ...(sort !== "featured" ? { sort } : {}), ...(q ? { q } : {}) }).toString()}`}
-          className={`h-8 min-h-[32px] flex items-center rounded-full px-3.5 text-xs font-semibold transition-all ${
+          className={`h-8 min-h-[32px] flex items-center rounded-full px-3.5 text-xs font-semibold transition-all duration-200 tap-bounce hover:scale-105 active:scale-95 ${
             !categorySlug
-              ? "bg-thaagai-sand text-thaagai-wine border border-thaagai-gold/60"
+              ? "bg-thaagai-sand text-thaagai-wine border border-thaagai-gold/60 shadow-xs"
               : "border border-thaagai-line bg-white text-thaagai-ink hover:border-thaagai-wine hover:text-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
           }`}
         >
@@ -312,9 +312,9 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
             <Link
               key={c.id}
               href={`/shop?${new URLSearchParams({ category: c.slug, ...(typeFilter ? { type: typeFilter } : {}), ...(sort !== "featured" ? { sort } : {}), ...(q ? { q } : {}) }).toString()}`}
-              className={`h-8 min-h-[32px] flex items-center rounded-full px-3.5 text-xs font-semibold transition-all ${
+              className={`h-8 min-h-[32px] flex items-center rounded-full px-3.5 text-xs font-semibold transition-all duration-200 tap-bounce hover:scale-105 active:scale-95 ${
                 active
-                  ? "bg-thaagai-sand text-thaagai-wine border border-thaagai-gold/60"
+                  ? "bg-thaagai-sand text-thaagai-wine border border-thaagai-gold/60 shadow-xs"
                   : "border border-thaagai-line bg-white text-thaagai-ink hover:border-thaagai-wine hover:text-thaagai-wine dark:border-thaagai-line/40 dark:bg-thaagai-cardDark dark:text-white"
               }`}
             >
@@ -357,7 +357,7 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
               <Link
                 key={product.id}
                 href={`/product/${product.slug}`}
-                className="group flex flex-col overflow-hidden rounded-xl border border-thaagai-line bg-white shadow-sm transition-all hover:border-thaagai-wine/50 hover:shadow-md dark:border-thaagai-line/30 dark:bg-thaagai-cardDark"
+                className="card-lift group flex flex-col overflow-hidden rounded-xl border border-thaagai-line bg-white shadow-sm transition-all hover:border-thaagai-wine/60 dark:border-thaagai-line/30 dark:bg-thaagai-cardDark"
               >
                 {/* Image Aspect Box */}
                 <div className="relative aspect-[3/4] w-full overflow-hidden bg-thaagai-sand/30 dark:bg-thaagai-sandDark/20">
@@ -367,7 +367,7 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
                       alt={product.images?.[0]?.altText || product.name}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                     />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center text-xs font-medium text-thaagai-ink/40">

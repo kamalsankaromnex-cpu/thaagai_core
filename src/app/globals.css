@@ -201,3 +201,81 @@ h1, h2, h3, .font-brand {
     background-color: #262321 !important;
   }
 }
+
+/* =========================================================================
+   LUXURY MICRO-ANIMATION UTILITIES (THAAGAI ATELIER)
+   ========================================================================= */
+
+/* Shimmer sweep on primary actions */
+.shimmer-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-sweep::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  pointer-events: none;
+}
+
+.shimmer-sweep:hover::after {
+  left: 160%;
+  transition: left 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Card elevation and subtle lift */
+.card-lift {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px -10px rgba(74, 32, 35, 0.12),
+              0 6px 12px -4px rgba(74, 32, 35, 0.06);
+}
+
+/* Tactile feedback on interactive controls */
+.tap-bounce {
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tap-bounce:active {
+  transform: scale(0.96);
+}
+
+/* Expanding gold underline effect on links */
+.link-expand-gold {
+  position: relative;
+  display: inline-block;
+}
+
+.link-expand-gold::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #B78A45;
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), left 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 9999px;
+}
+
+.link-expand-gold:hover::after {
+  width: 100%;
+  left: 0;
+}
+

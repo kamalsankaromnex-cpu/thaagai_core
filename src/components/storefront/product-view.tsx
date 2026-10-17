@@ -582,9 +582,9 @@ Could you confirm availability and process my order request?`;
                       type="button"
                       onClick={() => setSelectedImageIndex(idx)}
                       aria-label={`Select product image ${idx + 1}`}
-                      className={`relative h-18 w-16 sm:h-20 sm:w-16 shrink-0 overflow-hidden rounded-xl border-2 transition-all ${
+                      className={`relative h-18 w-16 sm:h-20 sm:w-16 shrink-0 overflow-hidden rounded-xl border-2 transition-all duration-200 tap-bounce hover:scale-105 active:scale-95 ${
                         isActive
-                          ? "border-stone-800 ring-2 ring-stone-800/20 shadow-xs"
+                          ? "border-stone-800 ring-2 ring-stone-800/20 shadow-md scale-105 opacity-100"
                           : "border-stone-200/80 opacity-75 hover:opacity-100 hover:border-stone-400"
                       }`}
                     >
@@ -863,10 +863,10 @@ Could you confirm availability and process my order request?`;
                           key={sz}
                           type="button"
                           onClick={() => setSelectedSize(sz)}
-                          className={`min-w-[48px] h-10 px-3 rounded-lg text-xs font-bold transition-all ${
+                          className={`min-w-[48px] h-10 px-3 rounded-lg text-xs font-bold transition-all duration-200 tap-bounce hover:scale-105 active:scale-95 ${
                             isSelected
-                              ? "border-2 border-stone-900 bg-white text-stone-900 shadow-xs ring-1 ring-stone-900/10"
-                              : "border border-stone-300 bg-white text-stone-700 hover:border-stone-500"
+                              ? "border-2 border-stone-900 bg-white text-stone-900 shadow-sm ring-2 ring-stone-900/20 scale-105"
+                              : "border border-stone-300 bg-white text-stone-700 hover:border-stone-500 hover:bg-stone-50"
                           }`}
                         >
                           {sz}
@@ -895,7 +895,7 @@ Could you confirm availability and process my order request?`;
                     </p>
                   </div>
                 ) : inStockQuantity <= 2 ? (
-                  <div className="text-xs">
+                  <div className="text-xs animate-badge-pulse">
                     <span className="inline-flex items-center gap-1.5 font-bold text-amber-800">
                       <Check className="h-4 w-4 text-amber-700 stroke-[3]" />
                       Only {inStockQuantity} left in stock — order soon
@@ -930,7 +930,7 @@ Could you confirm availability and process my order request?`;
                     onClick={() => setQuantity((q) => Math.max(1, q - 1))}
                     disabled={quantity <= 1}
                     aria-label="Decrease quantity"
-                    className="text-stone-500 hover:text-stone-900 disabled:opacity-30"
+                    className="tap-bounce text-stone-500 hover:text-stone-900 active:scale-90 transition-transform disabled:opacity-30"
                   >
                     <Minus className="h-3.5 w-3.5" />
                   </button>
@@ -941,7 +941,7 @@ Could you confirm availability and process my order request?`;
                     type="button"
                     onClick={() => setQuantity((q) => q + 1)}
                     aria-label="Increase quantity"
-                    className="text-stone-500 hover:text-stone-900"
+                    className="tap-bounce text-stone-500 hover:text-stone-900 active:scale-90 transition-transform"
                   >
                     <Plus className="h-3.5 w-3.5" />
                   </button>
@@ -951,18 +951,18 @@ Could you confirm availability and process my order request?`;
                 <button
                   type="button"
                   onClick={handleAddToBag}
-                  className={`flex h-11 flex-1 items-center justify-center gap-2 rounded-lg border-2 border-stone-900 bg-white px-5 text-xs sm:text-sm font-bold text-stone-900 shadow-xs transition hover:bg-stone-50 ${
-                    addedAnimation ? "border-emerald-600 text-emerald-700" : ""
+                  className={`shimmer-sweep tap-bounce flex h-11 flex-1 items-center justify-center gap-2 rounded-lg border-2 border-stone-900 bg-white px-5 text-xs sm:text-sm font-bold text-stone-900 shadow-xs transition-all duration-200 hover:bg-stone-50 active:scale-[0.98] ${
+                    addedAnimation ? "border-emerald-600 text-emerald-700 animate-scale-in" : ""
                   }`}
                 >
                   {addedAnimation ? (
                     <>
-                      <Check className="h-4 w-4 text-emerald-600" />
+                      <Check className="h-4 w-4 text-emerald-600 animate-bounce" />
                       <span>Added to Cart!</span>
                     </>
                   ) : (
                     <>
-                      <ShoppingBag className="h-4 w-4 text-stone-900" />
+                      <ShoppingBag className="h-4 w-4 text-stone-900 transition-transform duration-200 group-hover:scale-110" />
                       <span>{isOutOfReadyStock ? "Add to Cart (Made to Order)" : "Add to Cart"}</span>
                     </>
                   )}
@@ -972,7 +972,7 @@ Could you confirm availability and process my order request?`;
                 <button
                   type="button"
                   onClick={handleBuyNow}
-                  className="flex h-11 flex-1 items-center justify-center gap-2 rounded-lg bg-[#8A4A38] px-5 text-xs sm:text-sm font-bold text-white shadow-sm transition hover:bg-[#723B2C]"
+                  className="shimmer-sweep tap-bounce flex h-11 flex-1 items-center justify-center gap-2 rounded-lg bg-[#8A4A38] px-5 text-xs sm:text-sm font-bold text-white shadow-sm transition-all duration-200 hover:bg-[#723B2C] hover:shadow-md hover:scale-[1.01] active:scale-[0.98]"
                 >
                   Buy Now
                 </button>
