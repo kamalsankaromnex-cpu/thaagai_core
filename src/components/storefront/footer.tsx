@@ -303,42 +303,14 @@ export function Footer({ categories = [], storeProfile }: FooterProps) {
             </p>
           </div>
 
-          {/* Supported Payment Methods Badges */}
-          <div className="flex flex-wrap items-center justify-center gap-2" aria-label="Supported Payment Methods">
-            {/* UPI Badge */}
-            <span
-              title="UPI (Google Pay, PhonePe, Paytm, BHIM)"
-              className="inline-flex items-center gap-1.5 rounded-md border border-thaagai-line/80 bg-white px-2.5 py-1 text-[11px] font-semibold text-emerald-800 shadow-2xs dark:border-thaagai-line/30 dark:bg-thaagai-cardDark dark:text-emerald-400"
-            >
-              <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-              </svg>
-              <span>UPI</span>
-            </span>
-
-            {/* Net Banking / Bank Transfer */}
-            <span
-              title="Direct Net Banking & IMPS/NEFT Transfer"
-              className="inline-flex items-center gap-1.5 rounded-md border border-thaagai-line/80 bg-white px-2.5 py-1 text-[11px] font-semibold text-sky-800 shadow-2xs dark:border-thaagai-line/30 dark:bg-thaagai-cardDark dark:text-sky-400"
-            >
-              <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <rect x="2" y="5" width="20" height="14" rx="2" />
-                <line x1="2" y1="10" x2="22" y2="10" />
-              </svg>
-              <span>Net Banking</span>
-            </span>
-
-            {/* Cards (Visa / Mastercard / RuPay) */}
-            <span
-              title="Debit & Credit Cards"
-              className="inline-flex items-center gap-1.5 rounded-md border border-thaagai-line/80 bg-white px-2.5 py-1 text-[11px] font-semibold text-purple-800 shadow-2xs dark:border-thaagai-line/30 dark:bg-thaagai-cardDark dark:text-purple-400"
-            >
-              <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
-                <line x1="1" y1="10" x2="23" y2="10" />
-              </svg>
-              <span>Cards</span>
-            </span>
+          {/* Right-aligned: Powered by KAAMASI Solutions */}
+          <div className="text-center sm:text-right">
+            <p className="text-[11px] tracking-wider text-thaagai-ink/60 dark:text-thaagai-inkDark/60">
+              Powered by
+            </p>
+            <p className="font-serif text-sm font-semibold tracking-wide text-thaagai-wine dark:text-thaagai-gold">
+              KAAMASI Solutions
+            </p>
           </div>
         </div>
       </div>
